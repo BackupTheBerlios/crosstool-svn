@@ -1,0 +1,150 @@
+../string/bits/string2.h:84: warning: 'packed' attribute ignored
+../string/bits/string2.h:85: warning: 'packed' attribute ignored
+../string/bits/string2.h:86: warning: 'packed' attribute ignored
+alpha-unknown-linux-gnu-gcc  tmpnam_r.c -c -O -Wall -Winline -Wstrict-prototypes -Wwrite-strings -fno-unit-at-a-time -mieee  -fPIC    -I../include -I. -I/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common -I.. -I../libio  -I/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc -I../linuxthreads/sysdeps/alpha/elf -I../sysdeps/alpha/elf -I../linuxthreads/sysdeps/unix/sysv/linux -I../linuxthreads/sysdeps/pthread -I../sysdeps/pthread -I../linuxthreads/sysdeps/unix/sysv -I../linuxthreads/sysdeps/unix -I../linuxthreads/sysdeps/alpha -I../sysdeps/unix/sysv/linux/alpha/alpha -I../sysdeps/unix/sysv/linux/alpha -I../sysdeps/unix/sysv/linux -I../sysdeps/gnu -I../sysdeps/unix/common -I../sysdeps/unix/mman -I../sysdeps/unix/inet -I../sysdeps/unix/sysv -I../sysdeps/unix/alpha -I../sysdeps/unix -I../sysdeps/posix -I../sysdeps/alpha/fpu -I../sysdeps/alpha -I../sysdeps/wordsize-64 -I../sysdeps/ieee754/flt-32 -I../sysdeps/ieee754/dbl-64 -I../sysdeps/ieee754 -I../sysdeps/generic/elf -I../sysdeps/generic  -nostdinc -isystem /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/bin/../lib/gcc/alpha-unknown-linux-gnu/4.0.0/include -isystem /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/alpha-unknown-linux-gnu/include -D_LIBC_REENTRANT -include ../include/libc-symbols.h  -DPIC -DSHARED   -D_IO_MTSAFE_IO -o /home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common/tmpnam_r.os
+alpha-unknown-linux-gnu-gcc  tempnam.c -c -O -Wall -Winline -Wstrict-prototypes -Wwrite-strings -fno-unit-at-a-time -mieee  -fPIC    -I../include -I. -I/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common -I.. -I../libio  -I/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc -I../linuxthreads/sysdeps/alpha/elf -I../sysdeps/alpha/elf -I../linuxthreads/sysdeps/unix/sysv/linux -I../linuxthreads/sysdeps/pthread -I../sysdeps/pthread -I../linuxthreads/sysdeps/unix/sysv -I../linuxthreads/sysdeps/unix -I../linuxthreads/sysdeps/alpha -I../sysdeps/unix/sysv/linux/alpha/alpha -I../sysdeps/unix/sysv/linux/alpha -I../sysdeps/unix/sysv/linux -I../sysdeps/gnu -I../sysdeps/unix/common -I../sysdeps/unix/mman -I../sysdeps/unix/inet -I../sysdeps/unix/sysv -I../sysdeps/unix/alpha -I../sysdeps/unix -I../sysdeps/posix -I../sysdeps/alpha/fpu -I../sysdeps/alpha -I../sysdeps/wordsize-64 -I../sysdeps/ieee754/flt-32 -I../sysdeps/ieee754/dbl-64 -I../sysdeps/ieee754 -I../sysdeps/generic/elf -I../sysdeps/generic  -nostdinc -isystem /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/bin/../lib/gcc/alpha-unknown-linux-gnu/4.0.0/include -isystem /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/alpha-unknown-linux-gnu/include -D_LIBC_REENTRANT -include ../include/libc-symbols.h  -DPIC -DSHARED   -D_IO_MTSAFE_IO -o /home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common/tempnam.os
+In file included from ../include/bits/string2.h:1,
+                 from ../string/string.h:360,
+                 from ../include/string.h:49,
+                 from tempnam.c:20:
+../string/bits/string2.h:80: warning: 'packed' attribute ignored
+../string/bits/string2.h:81: warning: 'packed' attribute ignored
+../string/bits/string2.h:82: warning: 'packed' attribute ignored
+../string/bits/string2.h:83: warning: 'packed' attribute ignored
+../string/bits/string2.h:84: warning: 'packed' attribute ignored
+../string/bits/string2.h:85: warning: 'packed' attribute ignored
+../string/bits/string2.h:86: warning: 'packed' attribute ignored
+alpha-unknown-linux-gnu-gcc  ../sysdeps/posix/tempname.c -c -O -Wall -Winline -Wstrict-prototypes -Wwrite-strings -fno-unit-at-a-time -mieee  -fPIC    -I../include -I. -I/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common -I.. -I../libio  -I/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc -I../linuxthreads/sysdeps/alpha/elf -I../sysdeps/alpha/elf -I../linuxthreads/sysdeps/unix/sysv/linux -I../linuxthreads/sysdeps/pthread -I../sysdeps/pthread -I../linuxthreads/sysdeps/unix/sysv -I../linuxthreads/sysdeps/unix -I../linuxthreads/sysdeps/alpha -I../sysdeps/unix/sysv/linux/alpha/alpha -I../sysdeps/unix/sysv/linux/alpha -I../sysdeps/unix/sysv/linux -I../sysdeps/gnu -I../sysdeps/unix/common -I../sysdeps/unix/mman -I../sysdeps/unix/inet -I../sysdeps/unix/sysv -I../sysdeps/unix/alpha -I../sysdeps/unix -I../sysdeps/posix -I../sysdeps/alpha/fpu -I../sysdeps/alpha -I../sysdeps/wordsize-64 -I../sysdeps/ieee754/flt-32 -I../sysdeps/ieee754/dbl-64 -I../sysdeps/ieee754 -I../sysdeps/generic/elf -I../sysdeps/generic  -nostdinc -isystem /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/bin/../lib/gcc/alpha-unknown-linux-gnu/4.0.0/include -isystem /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/alpha-unknown-linux-gnu/include -D_LIBC_REENTRANT -include ../include/libc-symbols.h  -DPIC -DSHARED   -D_IO_MTSAFE_IO -o /home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common/tempname.os
+In file included from ../include/errno.h:36,
+                 from ../sysdeps/posix/tempname.c:26:
+../sysdeps/unix/sysv/linux/bits/errno.h:32:1: warning: "ECANCELED" redefined
+In file included from /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/alpha-unknown-linux-gnu/include/linux/errno.h:4,
+                 from ../sysdeps/unix/sysv/linux/bits/errno.h:25,
+                 from ../include/errno.h:36,
+                 from ../sysdeps/posix/tempname.c:26:
+/home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/alpha-unknown-linux-gnu/include/asm/errno.h:113:1: warning: this is the location of the previous definition
+In file included from ../include/bits/string2.h:1,
+                 from ../string/string.h:360,
+                 from ../include/string.h:49,
+                 from ../sysdeps/posix/tempname.c:48:
+../string/bits/string2.h:80: warning: 'packed' attribute ignored
+../string/bits/string2.h:81: warning: 'packed' attribute ignored
+../string/bits/string2.h:82: warning: 'packed' attribute ignored
+../string/bits/string2.h:83: warning: 'packed' attribute ignored
+../string/bits/string2.h:84: warning: 'packed' attribute ignored
+../string/bits/string2.h:85: warning: 'packed' attribute ignored
+../string/bits/string2.h:86: warning: 'packed' attribute ignored
+alpha-unknown-linux-gnu-gcc  getline.c -c -O -Wall -Winline -Wstrict-prototypes -Wwrite-strings -fno-unit-at-a-time -mieee  -fPIC    -I../include -I. -I/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common -I.. -I../libio  -I/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc -I../linuxthreads/sysdeps/alpha/elf -I../sysdeps/alpha/elf -I../linuxthreads/sysdeps/unix/sysv/linux -I../linuxthreads/sysdeps/pthread -I../sysdeps/pthread -I../linuxthreads/sysdeps/unix/sysv -I../linuxthreads/sysdeps/unix -I../linuxthreads/sysdeps/alpha -I../sysdeps/unix/sysv/linux/alpha/alpha -I../sysdeps/unix/sysv/linux/alpha -I../sysdeps/unix/sysv/linux -I../sysdeps/gnu -I../sysdeps/unix/common -I../sysdeps/unix/mman -I../sysdeps/unix/inet -I../sysdeps/unix/sysv -I../sysdeps/unix/alpha -I../sysdeps/unix -I../sysdeps/posix -I../sysdeps/alpha/fpu -I../sysdeps/alpha -I../sysdeps/wordsize-64 -I../sysdeps/ieee754/flt-32 -I../sysdeps/ieee754/dbl-64 -I../sysdeps/ieee754 -I../sysdeps/generic/elf -I../sysdeps/generic  -nostdinc -isystem /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/bin/../lib/gcc/alpha-unknown-linux-gnu/4.0.0/include -isystem /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/alpha-unknown-linux-gnu/include -D_LIBC_REENTRANT -include ../include/libc-symbols.h  -DPIC -DSHARED   -D_IO_MTSAFE_IO -o /home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common/getline.os
+In file included from ../include/errno.h:36,
+                 from ../libio/libioP.h:28,
+                 from getline.c:25:
+../sysdeps/unix/sysv/linux/bits/errno.h:32:1: warning: "ECANCELED" redefined
+In file included from /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/alpha-unknown-linux-gnu/include/linux/errno.h:4,
+                 from ../sysdeps/unix/sysv/linux/bits/errno.h:25,
+                 from ../include/errno.h:36,
+                 from ../libio/libioP.h:28,
+                 from getline.c:25:
+/home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/alpha-unknown-linux-gnu/include/asm/errno.h:113:1: warning: this is the location of the previous definition
+alpha-unknown-linux-gnu-gcc  getw.c -c -O -Wall -Winline -Wstrict-prototypes -Wwrite-strings -fno-unit-at-a-time -mieee  -fPIC    -I../include -I. -I/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common -I.. -I../libio  -I/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc -I../linuxthreads/sysdeps/alpha/elf -I../sysdeps/alpha/elf -I../linuxthreads/sysdeps/unix/sysv/linux -I../linuxthreads/sysdeps/pthread -I../sysdeps/pthread -I../linuxthreads/sysdeps/unix/sysv -I../linuxthreads/sysdeps/unix -I../linuxthreads/sysdeps/alpha -I../sysdeps/unix/sysv/linux/alpha/alpha -I../sysdeps/unix/sysv/linux/alpha -I../sysdeps/unix/sysv/linux -I../sysdeps/gnu -I../sysdeps/unix/common -I../sysdeps/unix/mman -I../sysdeps/unix/inet -I../sysdeps/unix/sysv -I../sysdeps/unix/alpha -I../sysdeps/unix -I../sysdeps/posix -I../sysdeps/alpha/fpu -I../sysdeps/alpha -I../sysdeps/wordsize-64 -I../sysdeps/ieee754/flt-32 -I../sysdeps/ieee754/dbl-64 -I../sysdeps/ieee754 -I../sysdeps/generic/elf -I../sysdeps/generic  -nostdinc -isystem /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/bin/../lib/gcc/alpha-unknown-linux-gnu/4.0.0/include -isystem /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/alpha-unknown-linux-gnu/include -D_LIBC_REENTRANT -include ../include/libc-symbols.h  -DPIC -DSHARED   -D_IO_MTSAFE_IO -o /home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common/getw.os
+alpha-unknown-linux-gnu-gcc  putw.c -c -O -Wall -Winline -Wstrict-prototypes -Wwrite-strings -fno-unit-at-a-time -mieee  -fPIC    -I../include -I. -I/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common -I.. -I../libio  -I/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc -I../linuxthreads/sysdeps/alpha/elf -I../sysdeps/alpha/elf -I../linuxthreads/sysdeps/unix/sysv/linux -I../linuxthreads/sysdeps/pthread -I../sysdeps/pthread -I../linuxthreads/sysdeps/unix/sysv -I../linuxthreads/sysdeps/unix -I../linuxthreads/sysdeps/alpha -I../sysdeps/unix/sysv/linux/alpha/alpha -I../sysdeps/unix/sysv/linux/alpha -I../sysdeps/unix/sysv/linux -I../sysdeps/gnu -I../sysdeps/unix/common -I../sysdeps/unix/mman -I../sysdeps/unix/inet -I../sysdeps/unix/sysv -I../sysdeps/unix/alpha -I../sysdeps/unix -I../sysdeps/posix -I../sysdeps/alpha/fpu -I../sysdeps/alpha -I../sysdeps/wordsize-64 -I../sysdeps/ieee754/flt-32 -I../sysdeps/ieee754/dbl-64 -I../sysdeps/ieee754 -I../sysdeps/generic/elf -I../sysdeps/generic  -nostdinc -isystem /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/bin/../lib/gcc/alpha-unknown-linux-gnu/4.0.0/include -isystem /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/alpha-unknown-linux-gnu/include -D_LIBC_REENTRANT -include ../include/libc-symbols.h  -DPIC -DSHARED   -D_IO_MTSAFE_IO -o /home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common/putw.os
+alpha-unknown-linux-gnu-gcc  ../sysdeps/posix/remove.c -c -O -Wall -Winline -Wstrict-prototypes -Wwrite-strings -fno-unit-at-a-time -mieee  -fPIC    -I../include -I. -I/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common -I.. -I../libio  -I/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc -I../linuxthreads/sysdeps/alpha/elf -I../sysdeps/alpha/elf -I../linuxthreads/sysdeps/unix/sysv/linux -I../linuxthreads/sysdeps/pthread -I../sysdeps/pthread -I../linuxthreads/sysdeps/unix/sysv -I../linuxthreads/sysdeps/unix -I../linuxthreads/sysdeps/alpha -I../sysdeps/unix/sysv/linux/alpha/alpha -I../sysdeps/unix/sysv/linux/alpha -I../sysdeps/unix/sysv/linux -I../sysdeps/gnu -I../sysdeps/unix/common -I../sysdeps/unix/mman -I../sysdeps/unix/inet -I../sysdeps/unix/sysv -I../sysdeps/unix/alpha -I../sysdeps/unix -I../sysdeps/posix -I../sysdeps/alpha/fpu -I../sysdeps/alpha -I../sysdeps/wordsize-64 -I../sysdeps/ieee754/flt-32 -I../sysdeps/ieee754/dbl-64 -I../sysdeps/ieee754 -I../sysdeps/generic/elf -I../sysdeps/generic  -nostdinc -isystem /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/bin/../lib/gcc/alpha-unknown-linux-gnu/4.0.0/include -isystem /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/alpha-unknown-linux-gnu/include -D_LIBC_REENTRANT -include ../include/libc-symbols.h  -DPIC -DSHARED   -D_IO_MTSAFE_IO -o /home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common/remove.os
+In file included from ../include/errno.h:36,
+                 from ../sysdeps/posix/remove.c:20:
+../sysdeps/unix/sysv/linux/bits/errno.h:32:1: warning: "ECANCELED" redefined
+In file included from /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/alpha-unknown-linux-gnu/include/linux/errno.h:4,
+                 from ../sysdeps/unix/sysv/linux/bits/errno.h:25,
+                 from ../include/errno.h:36,
+                 from ../sysdeps/posix/remove.c:20:
+/home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/alpha-unknown-linux-gnu/include/asm/errno.h:113:1: warning: this is the location of the previous definition
+(echo '#include <sysdep.h>'; \
+ echo 'PSEUDO (rename, rename, 2)'; \
+ echo '	ret'; \
+ echo 'PSEUDO_END(rename)'; \
+) | alpha-unknown-linux-gnu-gcc  -c  -I../include -I. -I/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common -I.. -I../libio  -I/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc -I../linuxthreads/sysdeps/alpha/elf -I../sysdeps/alpha/elf -I../linuxthreads/sysdeps/unix/sysv/linux -I../linuxthreads/sysdeps/pthread -I../sysdeps/pthread -I../linuxthreads/sysdeps/unix/sysv -I../linuxthreads/sysdeps/unix -I../linuxthreads/sysdeps/alpha -I../sysdeps/unix/sysv/linux/alpha/alpha -I../sysdeps/unix/sysv/linux/alpha -I../sysdeps/unix/sysv/linux -I../sysdeps/gnu -I../sysdeps/unix/common -I../sysdeps/unix/mman -I../sysdeps/unix/inet -I../sysdeps/unix/sysv -I../sysdeps/unix/alpha -I../sysdeps/unix -I../sysdeps/posix -I../sysdeps/alpha/fpu -I../sysdeps/alpha -I../sysdeps/wordsize-64 -I../sysdeps/ieee754/flt-32 -I../sysdeps/ieee754/dbl-64 -I../sysdeps/ieee754 -I../sysdeps/generic/elf -I../sysdeps/generic  -nostdinc -isystem /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/bin/../lib/gcc/alpha-unknown-linux-gnu/4.0.0/include -isystem /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/alpha-unknown-linux-gnu/include -D_LIBC_REENTRANT -include ../include/libc-symbols.h  -DPIC -DSHARED   -D_IO_MTSAFE_IO -DASSEMBLER   -x assembler-with-cpp -o /home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common/rename.os -
+alpha-unknown-linux-gnu-gcc  ../sysdeps/generic/lockfile.c -c -O -Wall -Winline -Wstrict-prototypes -Wwrite-strings -fno-unit-at-a-time -mieee  -fPIC    -I../include -I. -I/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common -I.. -I../libio  -I/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc -I../linuxthreads/sysdeps/alpha/elf -I../sysdeps/alpha/elf -I../linuxthreads/sysdeps/unix/sysv/linux -I../linuxthreads/sysdeps/pthread -I../sysdeps/pthread -I../linuxthreads/sysdeps/unix/sysv -I../linuxthreads/sysdeps/unix -I../linuxthreads/sysdeps/alpha -I../sysdeps/unix/sysv/linux/alpha/alpha -I../sysdeps/unix/sysv/linux/alpha -I../sysdeps/unix/sysv/linux -I../sysdeps/gnu -I../sysdeps/unix/common -I../sysdeps/unix/mman -I../sysdeps/unix/inet -I../sysdeps/unix/sysv -I../sysdeps/unix/alpha -I../sysdeps/unix -I../sysdeps/posix -I../sysdeps/alpha/fpu -I../sysdeps/alpha -I../sysdeps/wordsize-64 -I../sysdeps/ieee754/flt-32 -I../sysdeps/ieee754/dbl-64 -I../sysdeps/ieee754 -I../sysdeps/generic/elf -I../sysdeps/generic  -nostdinc -isystem /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/bin/../lib/gcc/alpha-unknown-linux-gnu/4.0.0/include -isystem /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/alpha-unknown-linux-gnu/include -D_LIBC_REENTRANT -include ../include/libc-symbols.h  -DPIC -DSHARED   -D_IO_MTSAFE_IO -o /home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common/lockfile.os
+alpha-unknown-linux-gnu-gcc  vfwprintf.c -c -O -Wall -Winline -Wstrict-prototypes -Wwrite-strings -fno-unit-at-a-time -mieee  -fPIC    -I../include -I. -I/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common -I.. -I../libio  -I/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc -I../linuxthreads/sysdeps/alpha/elf -I../sysdeps/alpha/elf -I../linuxthreads/sysdeps/unix/sysv/linux -I../linuxthreads/sysdeps/pthread -I../sysdeps/pthread -I../linuxthreads/sysdeps/unix/sysv -I../linuxthreads/sysdeps/unix -I../linuxthreads/sysdeps/alpha -I../sysdeps/unix/sysv/linux/alpha/alpha -I../sysdeps/unix/sysv/linux/alpha -I../sysdeps/unix/sysv/linux -I../sysdeps/gnu -I../sysdeps/unix/common -I../sysdeps/unix/mman -I../sysdeps/unix/inet -I../sysdeps/unix/sysv -I../sysdeps/unix/alpha -I../sysdeps/unix -I../sysdeps/posix -I../sysdeps/alpha/fpu -I../sysdeps/alpha -I../sysdeps/wordsize-64 -I../sysdeps/ieee754/flt-32 -I../sysdeps/ieee754/dbl-64 -I../sysdeps/ieee754 -I../sysdeps/generic/elf -I../sysdeps/generic  -nostdinc -isystem /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/bin/../lib/gcc/alpha-unknown-linux-gnu/4.0.0/include -isystem /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/alpha-unknown-linux-gnu/include -D_LIBC_REENTRANT -include ../include/libc-symbols.h  -DPIC -DSHARED   -D_IO_MTSAFE_IO -o /home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common/vfwprintf.os
+In file included from ../include/bits/string2.h:1,
+                 from ../string/string.h:360,
+                 from ../include/string.h:49,
+                 from vfprintf.c:25,
+                 from vfwprintf.c:3:
+../string/bits/string2.h:80: warning: 'packed' attribute ignored
+../string/bits/string2.h:81: warning: 'packed' attribute ignored
+../string/bits/string2.h:82: warning: 'packed' attribute ignored
+../string/bits/string2.h:83: warning: 'packed' attribute ignored
+../string/bits/string2.h:84: warning: 'packed' attribute ignored
+../string/bits/string2.h:85: warning: 'packed' attribute ignored
+../string/bits/string2.h:86: warning: 'packed' attribute ignored
+In file included from ../include/errno.h:36,
+                 from vfprintf.c:26,
+                 from vfwprintf.c:3:
+../sysdeps/unix/sysv/linux/bits/errno.h:32:1: warning: "ECANCELED" redefined
+In file included from /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/alpha-unknown-linux-gnu/include/linux/errno.h:4,
+                 from ../sysdeps/unix/sysv/linux/bits/errno.h:25,
+                 from ../include/errno.h:36,
+                 from vfprintf.c:26,
+                 from vfwprintf.c:3:
+/home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/alpha-unknown-linux-gnu/include/asm/errno.h:113:1: warning: this is the location of the previous definition
+In file included from vfwprintf.c:3:
+vfprintf.c: In function '_IO_vfwprintf':
+vfprintf.c:1741: warning: 'spec' may be used uninitialized in this function
+vfprintf.c:1740: warning: 'pad' may be used uninitialized in this function
+vfprintf.c:1739: warning: 'use_outdigits' may be used uninitialized in this function
+vfprintf.c:1738: warning: 'prec' may be used uninitialized in this function
+vfprintf.c:1737: warning: 'width' may be used uninitialized in this function
+vfprintf.c:1736: warning: 'is_long' may be used uninitialized in this function
+vfprintf.c:1735: warning: 'is_char' may be used uninitialized in this function
+vfprintf.c:1734: warning: 'is_short' may be used uninitialized in this function
+vfprintf.c:1733: warning: 'is_long_double' may be used uninitialized in this function
+vfprintf.c:1732: warning: 'group' may be used uninitialized in this function
+vfprintf.c:1731: warning: 'showsign' may be used uninitialized in this function
+vfprintf.c:1730: warning: 'left' may be used uninitialized in this function
+vfprintf.c:1729: warning: 'space' may be used uninitialized in this function
+vfprintf.c:1728: warning: 'alt' may be used uninitialized in this function
+vfprintf.c:1572: warning: 'args_value' may be used uninitialized in this function
+vfprintf.c:1565: warning: 'specs' may be used uninitialized in this function
+vfprintf.c:1562: warning: 'nspecs' may be used uninitialized in this function
+alpha-unknown-linux-gnu-gcc  vfwscanf.c -c -O -Wall -Winline -Wstrict-prototypes -Wwrite-strings -fno-unit-at-a-time -mieee  -fPIC    -I../include -I. -I/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common -I.. -I../libio  -I/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc -I../linuxthreads/sysdeps/alpha/elf -I../sysdeps/alpha/elf -I../linuxthreads/sysdeps/unix/sysv/linux -I../linuxthreads/sysdeps/pthread -I../sysdeps/pthread -I../linuxthreads/sysdeps/unix/sysv -I../linuxthreads/sysdeps/unix -I../linuxthreads/sysdeps/alpha -I../sysdeps/unix/sysv/linux/alpha/alpha -I../sysdeps/unix/sysv/linux/alpha -I../sysdeps/unix/sysv/linux -I../sysdeps/gnu -I../sysdeps/unix/common -I../sysdeps/unix/mman -I../sysdeps/unix/inet -I../sysdeps/unix/sysv -I../sysdeps/unix/alpha -I../sysdeps/unix -I../sysdeps/posix -I../sysdeps/alpha/fpu -I../sysdeps/alpha -I../sysdeps/wordsize-64 -I../sysdeps/ieee754/flt-32 -I../sysdeps/ieee754/dbl-64 -I../sysdeps/ieee754 -I../sysdeps/generic/elf -I../sysdeps/generic  -nostdinc -isystem /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/bin/../lib/gcc/alpha-unknown-linux-gnu/4.0.0/include -isystem /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/alpha-unknown-linux-gnu/include -D_LIBC_REENTRANT -include ../include/libc-symbols.h  -DPIC -DSHARED   -D_IO_MTSAFE_IO -o /home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common/vfwscanf.os
+In file included from ../include/errno.h:36,
+                 from vfscanf.c:20,
+                 from vfwscanf.c:2:
+../sysdeps/unix/sysv/linux/bits/errno.h:32:1: warning: "ECANCELED" redefined
+In file included from /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/alpha-unknown-linux-gnu/include/linux/errno.h:4,
+                 from ../sysdeps/unix/sysv/linux/bits/errno.h:25,
+                 from ../include/errno.h:36,
+                 from vfscanf.c:20,
+                 from vfwscanf.c:2:
+/home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/alpha-unknown-linux-gnu/include/asm/errno.h:113:1: warning: this is the location of the previous definition
+In file included from ../include/bits/string2.h:1,
+                 from ../string/string.h:360,
+                 from ../include/string.h:49,
+                 from vfscanf.c:27,
+                 from vfwscanf.c:2:
+../string/bits/string2.h:80: warning: 'packed' attribute ignored
+../string/bits/string2.h:81: warning: 'packed' attribute ignored
+../string/bits/string2.h:82: warning: 'packed' attribute ignored
+../string/bits/string2.h:83: warning: 'packed' attribute ignored
+../string/bits/string2.h:84: warning: 'packed' attribute ignored
+../string/bits/string2.h:85: warning: 'packed' attribute ignored
+../string/bits/string2.h:86: warning: 'packed' attribute ignored
+alpha-unknown-linux-gnu-gcc  ../sysdeps/unix/sysv/linux/errlist.c -c -O -Wall -Winline -Wstrict-prototypes -Wwrite-strings -fno-unit-at-a-time -mieee  -fPIC    -I../include -I. -I/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common -I.. -I../libio  -I/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc -I../linuxthreads/sysdeps/alpha/elf -I../sysdeps/alpha/elf -I../linuxthreads/sysdeps/unix/sysv/linux -I../linuxthreads/sysdeps/pthread -I../sysdeps/pthread -I../linuxthreads/sysdeps/unix/sysv -I../linuxthreads/sysdeps/unix -I../linuxthreads/sysdeps/alpha -I../sysdeps/unix/sysv/linux/alpha/alpha -I../sysdeps/unix/sysv/linux/alpha -I../sysdeps/unix/sysv/linux -I../sysdeps/gnu -I../sysdeps/unix/common -I../sysdeps/unix/mman -I../sysdeps/unix/inet -I../sysdeps/unix/sysv -I../sysdeps/unix/alpha -I../sysdeps/unix -I../sysdeps/posix -I../sysdeps/alpha/fpu -I../sysdeps/alpha -I../sysdeps/wordsize-64 -I../sysdeps/ieee754/flt-32 -I../sysdeps/ieee754/dbl-64 -I../sysdeps/ieee754 -I../sysdeps/generic/elf -I../sysdeps/generic  -nostdinc -isystem /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/bin/../lib/gcc/alpha-unknown-linux-gnu/4.0.0/include -isystem /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/alpha-unknown-linux-gnu/include -D_LIBC_REENTRANT -include ../include/libc-symbols.h  -DPIC -DSHARED   -D_IO_MTSAFE_IO -o /home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common/errlist.os
+In file included from ../include/errno.h:36,
+                 from ../sysdeps/gnu/errlist.c:3,
+                 from ../sysdeps/unix/sysv/linux/errlist.c:30:
+../sysdeps/unix/sysv/linux/bits/errno.h:32:1: warning: "ECANCELED" redefined
+In file included from /home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/alpha-unknown-linux-gnu/include/linux/errno.h:4,
+                 from ../sysdeps/unix/sysv/linux/bits/errno.h:25,
+                 from ../include/errno.h:36,
+                 from ../sysdeps/gnu/errlist.c:3,
+                 from ../sysdeps/unix/sysv/linux/errlist.c:30:
+/home/dank/crosstooltest/gcc-4.0.0-glibc-2.2.5/alpha-unknown-linux-gnu/alpha-unknown-linux-gnu/include/asm/errno.h:113:1: warning: this is the location of the previous definition
+../sysdeps/unix/sysv/linux/errlist.c:43: error: '_old_sys_errlist' aliased to undefined symbol '__old_sys_errlist'
+make[2]: *** [/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/build-glibc/stdio-common/errlist.os] Error 1
+make[2]: Leaving directory `/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/glibc-2.2.5/stdio-common'
+make[1]: *** [stdio-common/subdir_lib] Error 2
+make[1]: Leaving directory `/home/dank/queue/jobdir.fast/crosstool-0.35/build/alpha-unknown-linux-gnu/gcc-4.0.0-glibc-2.2.5/glibc-2.2.5'
+make: *** [all] Error 2
+
+real	12m32.969s
+user	9m51.120s
+sys	2m17.400s

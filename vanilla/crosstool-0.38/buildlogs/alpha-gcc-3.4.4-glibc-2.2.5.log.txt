@@ -1,0 +1,150 @@
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ANSI C... none needed
+checking whether gcc and cc understand -c and -o together... yes
+checking whether gcc accepts -Wno-long-long... yes
+checking how to run the C preprocessor... gcc -E
+checking for inline... inline
+checking for long long int... yes
+checking for __int64... no
+checking for built-in _Bool... yes
+checking size of void *... 4
+checking size of short... 2
+checking size of int... 4
+checking size of long... 4
+checking size of long long... 8
+checking for i686-host_pc-linux-gnu-gnatbind... no
+checking for gnatbind... no
+checking whether compiler driver understands Ada... no
+checking for egrep... grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking valgrind.h usability... no
+checking valgrind.h presence... no
+checking for valgrind.h... no
+checking whether make sets $(MAKE)... yes
+checking for gawk... gawk
+checking whether ln works... yes
+checking whether ln -s works... yes
+checking for i686-host_pc-linux-gnu-ranlib... ranlib
+checking for a BSD compatible install... /usr/bin/install -c
+checking for cmp's capabilities... gnucompare
+checking for mktemp... yes
+checking for makeinfo... makeinfo
+checking for modern makeinfo... no
+configure: WARNING:
+*** Makeinfo is missing or too old.
+*** Info documentation will not be built.
+checking for recent Pod::Man... no
+checking for flex... flex
+checking for bison... bison
+checking for GNU C library... yes
+checking for ANSI C header files... (cached) yes
+checking whether time.h and sys/time.h may both be included... yes
+checking for working stdbool.h... yes
+checking whether string.h and strings.h may both be included... yes
+checking for sys/wait.h that is POSIX.1 compatible... yes
+checking for limits.h... yes
+checking for stddef.h... yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for time.h... yes
+checking for fcntl.h... yes
+checking for unistd.h... (cached) yes
+checking for sys/file.h... yes
+checking for sys/time.h... yes
+checking for sys/mman.h... yes
+checking for sys/resource.h... yes
+checking for sys/param.h... yes
+checking for sys/times.h... yes
+checking for sys/stat.h... (cached) yes
+checking for direct.h... no
+checking for malloc.h... yes
+checking for langinfo.h... yes
+checking for ldfcn.h... no
+checking for locale.h... yes
+checking for wchar.h... yes
+checking for thread.h... no
+checking for pthread.h... yes
+checking for CHAR_BIT... yes
+checking whether byte ordering is bigendian... no
+checking for collect2 libraries... none required
+checking for library containing exc_resume... no
+checking for library containing ldexp... none required
+checking for inttypes.h... yes
+checking for times... yes
+checking for clock... yes
+checking for dup2... yes
+checking for kill... yes
+checking for getrlimit... yes
+checking for setrlimit... yes
+checking for atoll... yes
+checking for atoq... no
+checking for sysconf... yes
+checking for strsignal... yes
+checking for putc_unlocked... yes
+checking for fputc_unlocked... yes
+checking for fputs_unlocked... yes
+checking for fwrite_unlocked... yes
+checking for fprintf_unlocked... no
+checking for getrusage... yes
+checking for nl_langinfo... yes
+checking for scandir... yes
+checking for alphasort... yes
+checking for gettimeofday... yes
+checking for mbstowcs... yes
+checking for wcswidth... yes
+checking for mmap... yes
+checking for mincore... yes
+checking for setlocale... yes
+checking whether mbstowcs works... yes
+checking for ssize_t... yes
+checking for uid_t in sys/types.h... yes
+checking type of array argument to getgroups... gid_t
+checking whether the printf functions support %p... yes
+checking whether read-only mmap of a plain file works... yes
+checking whether mmap from /dev/zero works... yes
+checking for MAP_ANON(YMOUS)... yes
+checking whether mmap with MAP_ANON(YMOUS) works... yes
+checking for pid_t... yes
+checking for unistd.h... (cached) yes
+checking for vfork.h... no
+checking for fork... yes
+checking for vfork... yes
+checking for working fork... yes
+checking for working vfork... (cached) yes
+checking for iconv.h... yes
+checking for iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking for LC_MESSAGES... yes
+checking whether getenv is declared... yes
+checking whether atol is declared... yes
+checking whether sbrk is declared... yes
+checking whether abort is declared... yes
+checking whether atof is declared... yes
+checking whether getcwd is declared... yes
+checking whether getwd is declared... yes
+checking whether strsignal is declared... yes
+checking whether putc_unlocked is declared... yes
+checking whether fputs_unlocked is declared... yes
+checking whether fwrite_unlocked is declared... yes
+checking whether fprintf_unlocked is declared... no
+checking whether strstr is declared... yes
+checking whether errno is declared... yes
+checking whether snprintf is declared... yes
+checking whether vasprintf is declared... make: *** [configure-gcc] Error 1
+
+real	17m25.661s
+user	13m37.370s
+sys	3m31.480s
