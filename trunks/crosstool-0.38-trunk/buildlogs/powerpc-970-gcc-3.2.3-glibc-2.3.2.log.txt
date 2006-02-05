@@ -1,0 +1,150 @@
+checking whether free must be declared... no
+checking whether getenv must be declared... no
+checking for gcc version with buggy 64-bit support... no
+checking for ftello... yes
+checking for ftello64... yes
+checking for fseeko... yes
+checking for fseeko64... yes
+checking size of off_t... 4
+checking file_ptr type... BFD_HOST_64_BIT
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for getpagesize... (cached) yes
+checking for working mmap... (cached) yes
+checking for madvise... yes
+checking for mprotect... yes
+updating cache ./config.cache
+creating ./config.status
+creating Makefile
+creating doc/Makefile
+creating bfd-in3.h
+creating bfdver.h
+creating po/Makefile.in
+creating config.h
+make[1]: Entering directory `/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/build-binutils/libiberty'
+if [ x"" != x ] && [ ! -d pic ]; then \
+  mkdir pic; \
+else true; fi
+touch stamp-picdir
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -g -O2 -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/../include  -W -Wall -Wtraditional -pedantic  /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c -o pic/regex.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2 -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/../include  -W -Wall -Wtraditional -pedantic /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c -o regex.o
+In file included from /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c:651:
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c: In function `byte_regex_compile':
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c:2475: warning: implicit declaration of function `free'
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c:2536: warning: function `free' was previously declared within a block
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c:2569: warning: function `free' was previously declared within a block
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c:2676: warning: function `free' was previously declared within a block
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c:3289: warning: implicit declaration of function `strcmp'
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c:3679: warning: function `free' was previously declared within a block
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c:4186: warning: function `free' was previously declared within a block
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c: In function `byte_compile_range':
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c:4550: warning: signed and unsigned type in conditional expression
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c:4560: warning: signed and unsigned type in conditional expression
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c:4560: warning: signed and unsigned type in conditional expression
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c: In function `byte_re_compile_fastmap':
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c:4900: warning: implicit declaration of function `abort'
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c: In function `xre_comp':
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c:7951: warning: implicit declaration of function `strlen'
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c: In function `xregcomp':
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c:8084: warning: function `free' was previously declared within a block
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c: In function `xregexec':
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c:8163: warning: function `free' was previously declared within a block
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c: In function `xregerror':
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c:8205: warning: implicit declaration of function `mempcpy'
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c: In function `xregfree':
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/regex.c:8229: warning: function `free' was previously declared within a block
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -g -O2 -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/../include  -W -Wall -Wtraditional -pedantic  /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/cplus-dem.c -o pic/cplus-dem.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2 -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/../include  -W -Wall -Wtraditional -pedantic /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/cplus-dem.c -o cplus-dem.o
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -g -O2 -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/../include  -W -Wall -Wtraditional -pedantic  /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/cp-demangle.c -o pic/cp-demangle.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2 -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/../include  -W -Wall -Wtraditional -pedantic /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/cp-demangle.c -o cp-demangle.o
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/cp-demangle.c: In function `d_identifier':
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/cp-demangle.c:1382: warning: implicit declaration of function `memcmp'
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/cp-demangle.c: In function `d_expression':
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/cp-demangle.c:2320: warning: implicit declaration of function `strcmp'
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/cp-demangle.c: In function `d_print_append_buffer':
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/cp-demangle.c:2707: warning: implicit declaration of function `memcpy'
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/cp-demangle.c: In function `d_demangle':
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/cp-demangle.c:3796: warning: implicit declaration of function `strlen'
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/cp-demangle.c:3800: warning: implicit declaration of function `strncmp'
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/cp-demangle.c:3813: warning: implicit declaration of function `strcpy'
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/cp-demangle.c:3816: warning: implicit declaration of function `strcat'
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -g -O2 -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/../include  -W -Wall -Wtraditional -pedantic  /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/cp-demint.c -o pic/cp-demint.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2 -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/../include  -W -Wall -Wtraditional -pedantic /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/cp-demint.c -o cp-demint.o
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/cp-demint.c: In function `cplus_demangle_fill_builtin_type':
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/cp-demint.c:142: warning: implicit declaration of function `strlen'
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/cp-demint.c:146: warning: implicit declaration of function `strcmp'
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -g -O2 -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/../include  -W -Wall -Wtraditional -pedantic  /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/md5.c -o pic/md5.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2 -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/../include  -W -Wall -Wtraditional -pedantic /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/md5.c -o md5.o
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/md5.c: In function `md5_finish_ctx':
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/md5.c:115: warning: implicit declaration of function `memcpy'
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -g -O2 -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/../include  -W -Wall -Wtraditional -pedantic  /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/alloca.c -o pic/alloca.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2 -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/../include  -W -Wall -Wtraditional -pedantic /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/alloca.c -o alloca.o
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -g -O2 -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/../include  -W -Wall -Wtraditional -pedantic  /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/argv.c -o pic/argv.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2 -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/../include  -W -Wall -Wtraditional -pedantic /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/argv.c -o argv.o
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -g -O2 -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/../include  -W -Wall -Wtraditional -pedantic  /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/choose-temp.c -o pic/choose-temp.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2 -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/../include  -W -Wall -Wtraditional -pedantic /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/choose-temp.c -o choose-temp.o
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/choose-temp.c: In function `choose_temp_base':
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/choose-temp.c:63: warning: implicit declaration of function `strlen'
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/choose-temp.c:65: warning: implicit declaration of function `strcpy'
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -g -O2 -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/../include  -W -Wall -Wtraditional -pedantic  /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/concat.c -o pic/concat.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2 -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/../include  -W -Wall -Wtraditional -pedantic /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/concat.c -o concat.o
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/concat.c: In function `vconcat_length':
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/concat.c:82: warning: implicit declaration of function `strlen'
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/concat.c: In function `vconcat_copy':
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/concat.c:100: warning: implicit declaration of function `memcpy'
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -g -O2 -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/../include  -W -Wall -Wtraditional -pedantic  /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/dyn-string.c -o pic/dyn-string.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2 -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/../include  -W -Wall -Wtraditional -pedantic /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/dyn-string.c -o dyn-string.o
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/dyn-string.c: In function `dyn_string_copy':
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/dyn-string.c:212: warning: implicit declaration of function `strcpy'
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/dyn-string.c: In function `dyn_string_copy_cstr':
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/dyn-string.c:227: warning: implicit declaration of function `strlen'
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/dyn-string.c: In function `dyn_string_insert':
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/dyn-string.c:285: warning: implicit declaration of function `strncpy'
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/dyn-string.c: In function `dyn_string_eq':
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/dyn-string.c:441: warning: implicit declaration of function `strcmp'
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -g -O2 -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/../include  -W -Wall -Wtraditional -pedantic  /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/fdmatch.c -o pic/fdmatch.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2 -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/../include  -W -Wall -Wtraditional -pedantic /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/fdmatch.c -o fdmatch.o
+if [ x"" != x ]; then \
+  gcc -c -DHAVE_CONFIG_H -g -O2 -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/../include  -W -Wall -Wtraditional -pedantic  /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/fibheap.c -o pic/fibheap.o; \
+else true; fi
+gcc -c -DHAVE_CONFIG_H -g -O2 -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/../include  -W -Wall -Wtraditional -pedantic /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/fibheap.c -o fibheap.o
+In file included from /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/fibheap.c:35:
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/include/fibheap.h:63: warning: bit-field `degree' type invalid in ISO C
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/include/fibheap.h:64: warning: bit-field `mark' type invalid in ISO C
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/fibheap.c: In function `fibheap_delete_node':
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/fibheap.c:285: `LONG_MIN' undeclared (first use in this function)
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/fibheap.c:285: (Each undeclared identifier is reported only once
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/fibheap.c:285: for each function it appears in.)
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/fibheap.c: In function `fibheap_consolidate':
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/binutils-2.15/libiberty/fibheap.c:395: warning: implicit declaration of function `memset'
+make[1]: *** [fibheap.o] Error 1
+make[1]: Leaving directory `/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc64-unknown-linux-gnu/gcc-3.2.3-glibc-2.3.2/build-binutils/libiberty'
+make: *** [all-libiberty] Error 2
+
+real	2m1.093s
+user	1m24.320s
+sys	0m14.400s

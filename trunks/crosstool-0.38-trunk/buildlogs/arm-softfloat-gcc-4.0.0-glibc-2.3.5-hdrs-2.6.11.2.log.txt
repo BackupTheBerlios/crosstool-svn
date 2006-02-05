@@ -1,0 +1,150 @@
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x159e4): In function `__scalbnf':
+: undefined reference to `__mulsf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x15a0c): In function `__scalbnf':
+: undefined reference to `__addsf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x15a44): In function `__scalbnf':
+: undefined reference to `__mulsf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x15a7c): In function `__scalbnf':
+: undefined reference to `__mulsf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x15ac0): In function `__scalbnf':
+: undefined reference to `__mulsf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x15ae0): In function `__scalbnf':
+: undefined reference to `__mulsf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x15b40): In function `frexpf':
+: undefined reference to `__mulsf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x15b98): In function `__ldexpf':
+: undefined reference to `__eqsf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x15bc8): In function `__ldexpf':
+: undefined reference to `__eqsf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x18f80): In function `__erand48_r':
+: undefined reference to `__subdf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x209cc): In function `__vstrfmon_l':
+: undefined reference to `__ltdf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x20a24): In function `__vstrfmon_l':
+: undefined reference to `__ltdf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x2b4d0): In function `__printf_fp':
+: undefined reference to `__ltdf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x2ef40): In function `printf_size':
+: undefined reference to `__ltdf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x2ef7c): In function `printf_size':
+: undefined reference to `__divdf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x2efa0): In function `printf_size':
+: undefined reference to `__ledf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x2f558): In function `printf_size':
+: undefined reference to `__floatsidf'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x2f574): In function `printf_size':
+: undefined reference to `__gedf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x63e70): In function `$a':
+: undefined reference to `__adddf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x63e90): In function `difftime':
+: undefined reference to `__floatsidf'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x63ea0): In function `difftime':
+: undefined reference to `__floatsidf'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x63eb4): In function `difftime':
+: undefined reference to `__subdf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9e688): In function `__GI_fcvt_r':
+: undefined reference to `__muldf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9e6a0): In function `__GI_fcvt_r':
+: undefined reference to `__ltdf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9e79c): In function `__GI_fcvt_r':
+: undefined reference to `__nedf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9e95c): In function `ecvt_r':
+: undefined reference to `__nedf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9e978): In function `ecvt_r':
+: undefined reference to `__ltdf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9e9a0): In function `ecvt_r':
+: undefined reference to `__ltdf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9e9c0): In function `ecvt_r':
+: undefined reference to `__divdf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9e9d4): In function `ecvt_r':
+: undefined reference to `__ltdf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9ea10): In function `ecvt_r':
+: undefined reference to `__ltdf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9ea3c): In function `ecvt_r':
+: undefined reference to `__muldf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9ea5c): In function `ecvt_r':
+: undefined reference to `__muldf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9ea6c): In function `ecvt_r':
+: undefined reference to `__ltdf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9ea88): In function `ecvt_r':
+: undefined reference to `__muldf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9eaac): In function `ecvt_r':
+: undefined reference to `__gedf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9ead8): In function `ecvt_r':
+: undefined reference to `__muldf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9eaf4): In function `ecvt_r':
+: undefined reference to `__muldf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9eb08): In function `ecvt_r':
+: undefined reference to `__gedf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9eb24): In function `ecvt_r':
+: undefined reference to `__divdf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9ee28): In function `__GI_qfcvt_r':
+: undefined reference to `__muldf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9ee40): In function `__GI_qfcvt_r':
+: undefined reference to `__ltdf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9ef3c): In function `__GI_qfcvt_r':
+: undefined reference to `__nedf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9f0fc): In function `qecvt_r':
+: undefined reference to `__nedf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9f118): In function `qecvt_r':
+: undefined reference to `__ltdf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9f140): In function `qecvt_r':
+: undefined reference to `__ltdf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9f160): In function `qecvt_r':
+: undefined reference to `__divdf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9f174): In function `qecvt_r':
+: undefined reference to `__ltdf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9f1b0): In function `qecvt_r':
+: undefined reference to `__ltdf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9f1dc): In function `qecvt_r':
+: undefined reference to `__muldf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9f1fc): In function `qecvt_r':
+: undefined reference to `__muldf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9f20c): In function `qecvt_r':
+: undefined reference to `__ltdf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9f228): In function `qecvt_r':
+: undefined reference to `__muldf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9f24c): In function `qecvt_r':
+: undefined reference to `__gedf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9f278): In function `qecvt_r':
+: undefined reference to `__muldf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9f294): In function `qecvt_r':
+: undefined reference to `__muldf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9f2a8): In function `qecvt_r':
+: undefined reference to `__gedf2'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0x9f2c4): In function `qecvt_r':
+: undefined reference to `__divdf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0xa2b80): In function `monstartup':
+: undefined reference to `__floatsisf'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0xa2b94): In function `monstartup':
+: undefined reference to `__floatsisf'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0xa2ba0): In function `monstartup':
+: undefined reference to `__addsf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0xa2bac): In function `monstartup':
+: undefined reference to `__floatsisf'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0xa2bb8): In function `monstartup':
+: undefined reference to `__divsf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0xa2bc4): In function `monstartup':
+: undefined reference to `__mulsf3'
+/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc_pic.os(.text+0xa2bc8): In function `monstartup':
+: undefined reference to `__fixsfsi'
+/home/dank/crosstooltest/gcc-4.0.0-glibc-2.3.5/arm-softfloat-linux-gnu/bin/../lib/gcc/arm-softfloat-linux-gnu/4.0.0/libgcc.a(_floatdidf.o)(.text+0x10): In function `__floatdidf':
+: undefined reference to `__floatsidf'
+/home/dank/crosstooltest/gcc-4.0.0-glibc-2.3.5/arm-softfloat-linux-gnu/bin/../lib/gcc/arm-softfloat-linux-gnu/4.0.0/libgcc.a(_floatdidf.o)(.text+0x20): In function `__floatdidf':
+: undefined reference to `__muldf3'
+/home/dank/crosstooltest/gcc-4.0.0-glibc-2.3.5/arm-softfloat-linux-gnu/bin/../lib/gcc/arm-softfloat-linux-gnu/4.0.0/libgcc.a(_floatdidf.o)(.text+0x30): In function `__floatdidf':
+: undefined reference to `__floatsidf'
+/home/dank/crosstooltest/gcc-4.0.0-glibc-2.3.5/arm-softfloat-linux-gnu/bin/../lib/gcc/arm-softfloat-linux-gnu/4.0.0/libgcc.a(_floatdidf.o)(.text+0x60): In function `__floatdidf':
+: undefined reference to `__adddf3'
+/home/dank/crosstooltest/gcc-4.0.0-glibc-2.3.5/arm-softfloat-linux-gnu/bin/../lib/gcc/arm-softfloat-linux-gnu/4.0.0/libgcc.a(_floatdidf.o)(.text+0x68): In function `__floatdidf':
+: undefined reference to `__adddf3'
+/home/dank/crosstooltest/gcc-4.0.0-glibc-2.3.5/arm-softfloat-linux-gnu/bin/../lib/gcc/arm-softfloat-linux-gnu/4.0.0/libgcc.a(_floatdidf.o)(.text+0x84): In function `__floatdidf':
+: undefined reference to `__adddf3'
+collect2: ld returned 1 exit status
+make[1]: *** [/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/build-glibc/libc.so] Error 1
+make[1]: Leaving directory `/home/dank/queue/jobdir.fast/crosstool-0.35/build/arm-softfloat-linux-gnu/gcc-4.0.0-glibc-2.3.5/glibc-2.3.5'
+make: *** [lib] Error 2
+
+real	16m34.675s
+user	13m19.950s
+sys	2m26.010s

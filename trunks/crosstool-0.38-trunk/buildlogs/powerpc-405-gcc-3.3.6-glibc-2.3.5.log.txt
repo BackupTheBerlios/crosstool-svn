@@ -1,0 +1,150 @@
+	if test "x$transformed_name" = x; then \
+	  transformed_name=gdb ; \
+	else \
+	  true ; \
+	fi ; \
+	/bin/sh /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/../mkinstalldirs /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/bin ; \
+	/usr/bin/install -c gdb \
+		/home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/bin/$transformed_name ; \
+	/bin/sh /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/../mkinstalldirs \
+		/home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/man/man1 ; \
+	/usr/bin/install -c -m 644 /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdb.1 \
+		/home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/man/man1/$transformed_name.1
+make[2]: Entering directory `/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/build-gdb/gdb'
+make[3]: Entering directory `/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/build-gdb/gdb/doc'
+(test "ln -s" = "ln -s" && \
+  ln -s /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/doc/all-cfg.texi gdb-cfg.texi) || \
+ln /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/doc/all-cfg.texi gdb-cfg.texi || \
+cp /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/doc/all-cfg.texi gdb-cfg.texi
+/bin/sh /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/doc/../../mkinstalldirs /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/info
+ /usr/bin/install -c -m 644 /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/doc/gdb.info /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/info/gdb.info
+ /usr/bin/install -c -m 644 /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/doc/gdb.info-1 /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/info/gdb.info-1
+ /usr/bin/install -c -m 644 /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/doc/gdb.info-2 /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/info/gdb.info-2
+ /usr/bin/install -c -m 644 /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/doc/gdb.info-3 /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/info/gdb.info-3
+ /usr/bin/install -c -m 644 /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/doc/gdb.info-4 /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/info/gdb.info-4
+ /usr/bin/install -c -m 644 /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/doc/gdbint.info /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/info/gdbint.info
+ /usr/bin/install -c -m 644 /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/doc/gdbint.info-1 /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/info/gdbint.info-1
+ /usr/bin/install -c -m 644 /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/doc/gdbint.info-2 /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/info/gdbint.info-2
+ /usr/bin/install -c -m 644 /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/doc/stabs.info /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/info/stabs.info
+ /usr/bin/install -c -m 644 /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/doc/annotate.info /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/info/annotate.info
+ install-info --info-dir=/home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/info /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/info/gdb.info
+ install-info --info-dir=/home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/info /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/info/gdbint.info
+ install-info --info-dir=/home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/info /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/info/stabs.info
+ install-info --info-dir=/home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/info /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/info/annotate.info
+make[3]: Leaving directory `/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/build-gdb/gdb/doc'
+make[3]: Entering directory `/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/build-gdb/gdb/testsuite'
+make[3]: Nothing to be done for `install'.
+make[3]: Leaving directory `/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/build-gdb/gdb/testsuite'
+make[2]: Leaving directory `/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/build-gdb/gdb'
+make[1]: Leaving directory `/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/build-gdb/gdb'
++ cd ..
++ logresult gdb /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/bin/powerpc-405-linux-gnu-gdb
++ test -x /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/bin/powerpc-405-linux-gnu-gdb
++ echo crosstool: gdb built ok
+crosstool: gdb built ok
+Build gdbserver
++ echo Build gdbserver
++ mkdir -p build-gdbserver
++ cd build-gdbserver
++ test '!' -f Makefile
++ chmod +x /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/configure
++ CC=powerpc-405-linux-gnu-gcc
++ /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/configure --host=powerpc-405-linux-gnu --prefix=/home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu
+creating cache ./config.cache
+checking for gcc... powerpc-405-linux-gnu-gcc
+checking whether the C compiler (powerpc-405-linux-gnu-gcc  ) works... yes
+checking whether the C compiler (powerpc-405-linux-gnu-gcc  ) is a cross-compiler... yes
+checking whether we are using GNU C... yes
+checking whether powerpc-405-linux-gnu-gcc accepts -g... yes
+checking host system type... powerpc-405-linux-gnu
+checking target system type... powerpc-405-linux-gnu
+checking build system type... powerpc-405-linux-gnu
+checking for a BSD compatible install... /usr/bin/install -c
+checking how to run the C preprocessor... powerpc-405-linux-gnu-gcc -E
+checking for ANSI C header files... yes
+checking for sgtty.h... yes
+checking for termio.h... yes
+checking for termios.h... yes
+checking for sys/reg.h... no
+checking for string.h... yes
+checking for proc_service.h... no
+checking for sys/procfs.h... yes
+checking for thread_db.h... yes
+checking for linux/elf.h... yes
+checking for stdlib.h... yes
+checking for unistd.h... yes
+checking whether strerror must be declared... no
+checking for lwpid_t in sys/procfs.h... yes
+checking for psaddr_t in sys/procfs.h... yes
+checking for prgregset_t in sys/procfs.h... yes
+checking for prfpregset_t in sys/procfs.h... yes
+checking whether prfpregset_t type is broken... yes
+checking for elf_fpregset_t in sys/procfs.h... yes
+checking for libthread_db... -lthread_db
+updating cache ./config.cache
+creating ./config.status
+creating Makefile
+creating config.h
++ make all
+powerpc-405-linux-gnu-gcc -c -Wall -g -O2    -I. -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../regformats -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../include -I../../bfd -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../bfd /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/inferiors.c
+powerpc-405-linux-gnu-gcc -c -Wall -g -O2    -I. -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../regformats -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../include -I../../bfd -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../bfd /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/regcache.c
+powerpc-405-linux-gnu-gcc -c -Wall -g -O2    -I. -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../regformats -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../include -I../../bfd -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../bfd /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/remote-utils.c
+powerpc-405-linux-gnu-gcc -c -Wall -g -O2    -I. -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../regformats -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../include -I../../bfd -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../bfd /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/server.c
+powerpc-405-linux-gnu-gcc -c  -Wall -g -O2    -I. -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../regformats -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../include -I../../bfd -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../bfd /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../signals/signals.c -DGDBSERVER
+powerpc-405-linux-gnu-gcc -c -Wall -g -O2    -I. -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../regformats -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../include -I../../bfd -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../bfd /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/target.c
+powerpc-405-linux-gnu-gcc -c -Wall -g -O2    -I. -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../regformats -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../include -I../../bfd -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../bfd /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/utils.c
+powerpc-405-linux-gnu-gcc -c -Wall -g -O2    -I. -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../regformats -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../include -I../../bfd -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../bfd /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/mem-break.c
+sh /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../regformats/regdat.sh /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../regformats/reg-ppc.dat reg-ppc.c
+reg-ppc.c updated.
+powerpc-405-linux-gnu-gcc -c -Wall -g -O2    -I. -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../regformats -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../include -I../../bfd -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../bfd reg-ppc.c
+powerpc-405-linux-gnu-gcc -c  -Wall -g -O2    -I. -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../regformats -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../include -I../../bfd -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../bfd /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/linux-low.c -DUSE_THREAD_DB
+powerpc-405-linux-gnu-gcc -c -Wall -g -O2    -I. -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../regformats -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../include -I../../bfd -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../bfd /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/linux-ppc-low.c
+powerpc-405-linux-gnu-gcc -c -Wall -g -O2    -I. -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../regformats -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../include -I../../bfd -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../bfd /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/thread-db.c
+powerpc-405-linux-gnu-gcc -c -Wall -g -O2    -I. -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../regformats -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../include -I../../bfd -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../bfd /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/proc-service.c
+rm -f gdbserver
+powerpc-405-linux-gnu-gcc     -o gdbserver inferiors.o regcache.o remote-utils.o server.o signals.o target.o utils.o mem-break.o reg-ppc.o linux-low.o linux-ppc-low.o thread-db.o proc-service.o \
+  -lthread_db 
+powerpc-405-linux-gnu-gcc -c -Wall -g -O2    -I. -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../regformats -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../include -I../../bfd -I/home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../bfd /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/gdbreplay.c
+rm -f gdbreplay
+powerpc-405-linux-gnu-gcc     -o gdbreplay gdbreplay.o \
+  
++ make install
+n=`echo gdbserver | sed 's,x,x,'`; \
+if [ x$n = x ]; then n=gdbserver; else true; fi; \
+/bin/sh /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../mkinstalldirs /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/bin; \
+/usr/bin/install -c gdbserver /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/bin/$n; \
+/bin/sh /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/../../mkinstalldirs /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/man/man1; \
+/usr/bin/install -c -m 644 /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5/gdb-6.3/gdb/gdbserver/gdbserver.1 /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/man/man1/$n.1
++ cd ..
+crosstool: gdbserver built ok
++ logresult gdbserver /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/bin/gdbserver
++ test -x /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/bin/gdbserver
++ echo crosstool: gdbserver built ok
++ powerpc-405-linux-gnu-strip /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/bin/gdbserver
++ test 1 = 1
++ sh testlinux.sh
++ test -z /home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu
++ test -z linux-2.4.26
++ test -z /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5
++ test -z powerpc-405-linux-gnu
++ test -z ''
++ test x '!=' x
++ ARCH=ppc
++ cd /home/dank/queue/jobdir.fast/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-3.3.6-glibc-2.3.5
+++ awk '/^VERSION =/ { print $3 }' linux-2.4.26/Makefile
++ KERNEL_VERSION=2
+++ awk '/^PATCHLEVEL =/ { print $3 }' linux-2.4.26/Makefile
++ KERNEL_PATCHLEVEL=4
+sorry, for 2.4 kernel you need a config file
++ cd linux-2.4.26
++ test -f ''
++ ARCH=ppc
++ CROSS_COMPILE=/home/dank/crosstooltest/gcc-3.3.6-glibc-2.3.5/powerpc-405-linux-gnu/bin/powerpc-405-linux-gnu-
++ test -f .config
++ abort 'sorry, for 2.4 kernel you need a config file'
++ echo sorry, for 2.4 kernel you need a config file
++ exec false
+
+real	43m27.374s
+user	38m0.820s
+sys	5m14.190s

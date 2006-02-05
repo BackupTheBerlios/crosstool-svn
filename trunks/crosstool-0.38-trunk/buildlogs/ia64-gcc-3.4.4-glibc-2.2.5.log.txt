@@ -1,0 +1,150 @@
+../locale/programs/linereader.h:145: warning: inlining failed in call to 'lr_ignore_rest': --param large-function-growth limit reached
+../locale/programs/charmap.c:420: warning: called from here
+../locale/programs/linereader.h:145: warning: inlining failed in call to 'lr_ignore_rest': --param large-function-growth limit reached
+../locale/programs/charmap.c:429: warning: called from here
+../locale/programs/linereader.h:145: warning: inlining failed in call to 'lr_ignore_rest': --param large-function-growth limit reached
+../locale/programs/charmap.c:444: warning: called from here
+../locale/programs/linereader.h:145: warning: inlining failed in call to 'lr_ignore_rest': --param large-function-growth limit reached
+../locale/programs/charmap.c:453: warning: called from here
+../locale/programs/linereader.h:145: warning: inlining failed in call to 'lr_ignore_rest': --param large-function-growth limit reached
+../locale/programs/charmap.c:461: warning: called from here
+../locale/programs/linereader.h:145: warning: inlining failed in call to 'lr_ignore_rest': --param large-function-growth limit reached
+../locale/programs/charmap.c:495: warning: called from here
+../locale/programs/linereader.h:145: warning: inlining failed in call to 'lr_ignore_rest': --param large-function-growth limit reached
+../locale/programs/charmap.c:549: warning: called from here
+../locale/programs/linereader.h:145: warning: inlining failed in call to 'lr_ignore_rest': --param large-function-growth limit reached
+../locale/programs/charmap.c:565: warning: called from here
+../locale/programs/linereader.h:145: warning: inlining failed in call to 'lr_ignore_rest': --param large-function-growth limit reached
+../locale/programs/charmap.c:582: warning: called from here
+../locale/programs/linereader.h:145: warning: inlining failed in call to 'lr_ignore_rest': --param large-function-growth limit reached
+../locale/programs/charmap.c:607: warning: called from here
+../locale/programs/linereader.h:145: warning: inlining failed in call to 'lr_ignore_rest': --param large-function-growth limit reached
+../locale/programs/charmap.c:625: warning: called from here
+../locale/programs/linereader.h:145: warning: inlining failed in call to 'lr_ignore_rest': --param large-function-growth limit reached
+../locale/programs/charmap.c:632: warning: called from here
+../locale/programs/linereader.h:145: warning: inlining failed in call to 'lr_ignore_rest': --param large-function-growth limit reached
+../locale/programs/charmap.c:640: warning: called from here
+../locale/programs/linereader.h:145: warning: inlining failed in call to 'lr_ignore_rest': --param large-function-growth limit reached
+../locale/programs/charmap.c:650: warning: called from here
+../locale/programs/linereader.h:145: warning: inlining failed in call to 'lr_ignore_rest': --param large-function-growth limit reached
+../locale/programs/charmap.c:675: warning: called from here
+../locale/programs/linereader.h:145: warning: inlining failed in call to 'lr_ignore_rest': --param large-function-growth limit reached
+../locale/programs/charmap.c:719: warning: called from here
+../locale/programs/linereader.h:145: warning: inlining failed in call to 'lr_ignore_rest': --param large-function-growth limit reached
+../locale/programs/charmap.c:730: warning: called from here
+../locale/programs/linereader.h:145: warning: inlining failed in call to 'lr_ignore_rest': --param large-function-growth limit reached
+../locale/programs/charmap.c:771: warning: called from here
+../locale/programs/linereader.h:145: warning: inlining failed in call to 'lr_ignore_rest': --param large-function-growth limit reached
+../locale/programs/charmap.c:812: warning: called from here
+../locale/programs/linereader.h:145: warning: inlining failed in call to 'lr_ignore_rest': --param large-function-growth limit reached
+../locale/programs/charmap.c:830: warning: called from here
+../locale/programs/charmap.c: In function `charmap_new_char':
+../locale/programs/charmap.c:952: warning: comparison is always false due to limited range of data type
+../locale/programs/charmap.c:998: warning: comparison is always false due to limited range of data type
+../locale/programs/charmap.c:1001: warning: comparison is always false due to limited range of data type
+../locale/programs/charmap.c:1047: warning: comparison is always false due to limited range of data type
+ia64-unknown-linux-gnu-gcc  ../locale/programs/charmap-dir.c -c -O -Wall -Winline -Wstrict-prototypes -Wwrite-strings -fno-unit-at-a-time      -I../include -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/iconv -I.. -I../libio  -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc -I../sysdeps/ia64/elf -I../linuxthreads/sysdeps/unix/sysv/linux/ia64 -I../linuxthreads/sysdeps/unix/sysv/linux -I../linuxthreads/sysdeps/pthread -I../sysdeps/pthread -I../linuxthreads/sysdeps/unix/sysv -I../linuxthreads/sysdeps/unix -I../linuxthreads/sysdeps/ia64 -I../sysdeps/unix/sysv/linux/ia64 -I../sysdeps/unix/sysv/linux -I../sysdeps/gnu -I../sysdeps/unix/common -I../sysdeps/unix/mman -I../sysdeps/unix/inet -I../sysdeps/unix/sysv -I../sysdeps/unix -I../sysdeps/posix -I../sysdeps/ia64/fpu -I../sysdeps/ia64 -I../sysdeps/wordsize-64 -I../sysdeps/ieee754/ldbl-96 -I../sysdeps/ieee754/dbl-64 -I../sysdeps/ieee754/flt-32 -I../sysdeps/ieee754 -I../sysdeps/generic/elf -I../sysdeps/generic  -nostdinc -isystem /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/gcc-core-prefix/bin/../lib/gcc/ia64-unknown-linux-gnu/3.4.4/include -isystem /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/ia64-unknown-linux-gnu/ia64-unknown-linux-gnu/include -D_LIBC_REENTRANT -include ../include/libc-symbols.h     -o /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/iconv/charmap-dir.o
+In file included from ../include/bits/string2.h:1,
+                 from ../string/string.h:360,
+                 from ../include/string.h:49,
+                 from ../locale/programs/charmap-dir.c:27:
+../string/bits/string2.h:80: warning: `packed' attribute ignored
+../string/bits/string2.h:81: warning: `packed' attribute ignored
+../string/bits/string2.h:82: warning: `packed' attribute ignored
+../string/bits/string2.h:83: warning: `packed' attribute ignored
+../string/bits/string2.h:84: warning: `packed' attribute ignored
+../string/bits/string2.h:85: warning: `packed' attribute ignored
+../string/bits/string2.h:86: warning: `packed' attribute ignored
+ia64-unknown-linux-gnu-gcc  ../locale/programs/linereader.c -c -O -Wall -Winline -Wstrict-prototypes -Wwrite-strings -fno-unit-at-a-time      -I../include -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/iconv -I.. -I../libio  -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc -I../sysdeps/ia64/elf -I../linuxthreads/sysdeps/unix/sysv/linux/ia64 -I../linuxthreads/sysdeps/unix/sysv/linux -I../linuxthreads/sysdeps/pthread -I../sysdeps/pthread -I../linuxthreads/sysdeps/unix/sysv -I../linuxthreads/sysdeps/unix -I../linuxthreads/sysdeps/ia64 -I../sysdeps/unix/sysv/linux/ia64 -I../sysdeps/unix/sysv/linux -I../sysdeps/gnu -I../sysdeps/unix/common -I../sysdeps/unix/mman -I../sysdeps/unix/inet -I../sysdeps/unix/sysv -I../sysdeps/unix -I../sysdeps/posix -I../sysdeps/ia64/fpu -I../sysdeps/ia64 -I../sysdeps/wordsize-64 -I../sysdeps/ieee754/ldbl-96 -I../sysdeps/ieee754/dbl-64 -I../sysdeps/ieee754/flt-32 -I../sysdeps/ieee754 -I../sysdeps/generic/elf -I../sysdeps/generic  -nostdinc -isystem /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/gcc-core-prefix/bin/../lib/gcc/ia64-unknown-linux-gnu/3.4.4/include -isystem /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/ia64-unknown-linux-gnu/ia64-unknown-linux-gnu/include -D_LIBC_REENTRANT -include ../include/libc-symbols.h     -o /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/iconv/linereader.o
+In file included from ../include/bits/string2.h:1,
+                 from ../string/string.h:360,
+                 from ../include/string.h:49,
+                 from ../locale/programs/linereader.c:29:
+../string/bits/string2.h:80: warning: `packed' attribute ignored
+../string/bits/string2.h:81: warning: `packed' attribute ignored
+../string/bits/string2.h:82: warning: `packed' attribute ignored
+../string/bits/string2.h:83: warning: `packed' attribute ignored
+../string/bits/string2.h:84: warning: `packed' attribute ignored
+../string/bits/string2.h:85: warning: `packed' attribute ignored
+../string/bits/string2.h:86: warning: `packed' attribute ignored
+ia64-unknown-linux-gnu-gcc  dummy-repertoire.c -c -O -Wall -Winline -Wstrict-prototypes -Wwrite-strings -fno-unit-at-a-time   -I../locale/programs   -I../include -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/iconv -I.. -I../libio  -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc -I../sysdeps/ia64/elf -I../linuxthreads/sysdeps/unix/sysv/linux/ia64 -I../linuxthreads/sysdeps/unix/sysv/linux -I../linuxthreads/sysdeps/pthread -I../sysdeps/pthread -I../linuxthreads/sysdeps/unix/sysv -I../linuxthreads/sysdeps/unix -I../linuxthreads/sysdeps/ia64 -I../sysdeps/unix/sysv/linux/ia64 -I../sysdeps/unix/sysv/linux -I../sysdeps/gnu -I../sysdeps/unix/common -I../sysdeps/unix/mman -I../sysdeps/unix/inet -I../sysdeps/unix/sysv -I../sysdeps/unix -I../sysdeps/posix -I../sysdeps/ia64/fpu -I../sysdeps/ia64 -I../sysdeps/wordsize-64 -I../sysdeps/ieee754/ldbl-96 -I../sysdeps/ieee754/dbl-64 -I../sysdeps/ieee754/flt-32 -I../sysdeps/ieee754 -I../sysdeps/generic/elf -I../sysdeps/generic  -nostdinc -isystem /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/gcc-core-prefix/bin/../lib/gcc/ia64-unknown-linux-gnu/3.4.4/include -isystem /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/ia64-unknown-linux-gnu/ia64-unknown-linux-gnu/include -D_LIBC_REENTRANT -include ../include/libc-symbols.h     -o /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/iconv/dummy-repertoire.o
+In file included from ../include/bits/string2.h:1,
+                 from ../string/string.h:360,
+                 from ../include/string.h:49,
+                 from ../malloc/obstack.h:143,
+                 from ../include/obstack.h:1,
+                 from ../locale/programs/repertoire.h:23,
+                 from dummy-repertoire.c:22:
+../string/bits/string2.h:80: warning: `packed' attribute ignored
+../string/bits/string2.h:81: warning: `packed' attribute ignored
+../string/bits/string2.h:82: warning: `packed' attribute ignored
+../string/bits/string2.h:83: warning: `packed' attribute ignored
+../string/bits/string2.h:84: warning: `packed' attribute ignored
+../string/bits/string2.h:85: warning: `packed' attribute ignored
+../string/bits/string2.h:86: warning: `packed' attribute ignored
+ia64-unknown-linux-gnu-gcc  ../locale/programs/simple-hash.c -c -O -Wall -Winline -Wstrict-prototypes -Wwrite-strings -fno-unit-at-a-time      -I../include -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/iconv -I.. -I../libio  -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc -I../sysdeps/ia64/elf -I../linuxthreads/sysdeps/unix/sysv/linux/ia64 -I../linuxthreads/sysdeps/unix/sysv/linux -I../linuxthreads/sysdeps/pthread -I../sysdeps/pthread -I../linuxthreads/sysdeps/unix/sysv -I../linuxthreads/sysdeps/unix -I../linuxthreads/sysdeps/ia64 -I../sysdeps/unix/sysv/linux/ia64 -I../sysdeps/unix/sysv/linux -I../sysdeps/gnu -I../sysdeps/unix/common -I../sysdeps/unix/mman -I../sysdeps/unix/inet -I../sysdeps/unix/sysv -I../sysdeps/unix -I../sysdeps/posix -I../sysdeps/ia64/fpu -I../sysdeps/ia64 -I../sysdeps/wordsize-64 -I../sysdeps/ieee754/ldbl-96 -I../sysdeps/ieee754/dbl-64 -I../sysdeps/ieee754/flt-32 -I../sysdeps/ieee754 -I../sysdeps/generic/elf -I../sysdeps/generic  -nostdinc -isystem /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/gcc-core-prefix/bin/../lib/gcc/ia64-unknown-linux-gnu/3.4.4/include -isystem /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/ia64-unknown-linux-gnu/ia64-unknown-linux-gnu/include -D_LIBC_REENTRANT -include ../include/libc-symbols.h     -o /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/iconv/simple-hash.o
+In file included from ../include/bits/string2.h:1,
+                 from ../string/string.h:360,
+                 from ../include/string.h:49,
+                 from ../locale/programs/simple-hash.c:27:
+../string/bits/string2.h:80: warning: `packed' attribute ignored
+../string/bits/string2.h:81: warning: `packed' attribute ignored
+../string/bits/string2.h:82: warning: `packed' attribute ignored
+../string/bits/string2.h:83: warning: `packed' attribute ignored
+../string/bits/string2.h:84: warning: `packed' attribute ignored
+../string/bits/string2.h:85: warning: `packed' attribute ignored
+../string/bits/string2.h:86: warning: `packed' attribute ignored
+ia64-unknown-linux-gnu-gcc  ../locale/programs/xstrdup.c -c -O -Wall -Winline -Wstrict-prototypes -Wwrite-strings -fno-unit-at-a-time      -I../include -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/iconv -I.. -I../libio  -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc -I../sysdeps/ia64/elf -I../linuxthreads/sysdeps/unix/sysv/linux/ia64 -I../linuxthreads/sysdeps/unix/sysv/linux -I../linuxthreads/sysdeps/pthread -I../sysdeps/pthread -I../linuxthreads/sysdeps/unix/sysv -I../linuxthreads/sysdeps/unix -I../linuxthreads/sysdeps/ia64 -I../sysdeps/unix/sysv/linux/ia64 -I../sysdeps/unix/sysv/linux -I../sysdeps/gnu -I../sysdeps/unix/common -I../sysdeps/unix/mman -I../sysdeps/unix/inet -I../sysdeps/unix/sysv -I../sysdeps/unix -I../sysdeps/posix -I../sysdeps/ia64/fpu -I../sysdeps/ia64 -I../sysdeps/wordsize-64 -I../sysdeps/ieee754/ldbl-96 -I../sysdeps/ieee754/dbl-64 -I../sysdeps/ieee754/flt-32 -I../sysdeps/ieee754 -I../sysdeps/generic/elf -I../sysdeps/generic  -nostdinc -isystem /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/gcc-core-prefix/bin/../lib/gcc/ia64-unknown-linux-gnu/3.4.4/include -isystem /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/ia64-unknown-linux-gnu/ia64-unknown-linux-gnu/include -D_LIBC_REENTRANT -include ../include/libc-symbols.h     -o /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/iconv/xstrdup.o
+In file included from ../include/bits/string2.h:1,
+                 from ../string/string.h:360,
+                 from ../include/string.h:49,
+                 from ../locale/programs/xstrdup.c:25:
+../string/bits/string2.h:80: warning: `packed' attribute ignored
+../string/bits/string2.h:81: warning: `packed' attribute ignored
+../string/bits/string2.h:82: warning: `packed' attribute ignored
+../string/bits/string2.h:83: warning: `packed' attribute ignored
+../string/bits/string2.h:84: warning: `packed' attribute ignored
+../string/bits/string2.h:85: warning: `packed' attribute ignored
+../string/bits/string2.h:86: warning: `packed' attribute ignored
+ia64-unknown-linux-gnu-gcc  ../locale/programs/xmalloc.c -c -O -Wall -Winline -Wstrict-prototypes -Wwrite-strings -fno-unit-at-a-time      -I../include -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/iconv -I.. -I../libio  -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc -I../sysdeps/ia64/elf -I../linuxthreads/sysdeps/unix/sysv/linux/ia64 -I../linuxthreads/sysdeps/unix/sysv/linux -I../linuxthreads/sysdeps/pthread -I../sysdeps/pthread -I../linuxthreads/sysdeps/unix/sysv -I../linuxthreads/sysdeps/unix -I../linuxthreads/sysdeps/ia64 -I../sysdeps/unix/sysv/linux/ia64 -I../sysdeps/unix/sysv/linux -I../sysdeps/gnu -I../sysdeps/unix/common -I../sysdeps/unix/mman -I../sysdeps/unix/inet -I../sysdeps/unix/sysv -I../sysdeps/unix -I../sysdeps/posix -I../sysdeps/ia64/fpu -I../sysdeps/ia64 -I../sysdeps/wordsize-64 -I../sysdeps/ieee754/ldbl-96 -I../sysdeps/ieee754/dbl-64 -I../sysdeps/ieee754/flt-32 -I../sysdeps/ieee754 -I../sysdeps/generic/elf -I../sysdeps/generic  -nostdinc -isystem /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/gcc-core-prefix/bin/../lib/gcc/ia64-unknown-linux-gnu/3.4.4/include -isystem /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/ia64-unknown-linux-gnu/ia64-unknown-linux-gnu/include -D_LIBC_REENTRANT -include ../include/libc-symbols.h     -o /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/iconv/xmalloc.o
+ia64-unknown-linux-gnu-gcc  strtab.c -c -O -Wall -Winline -Wstrict-prototypes -Wwrite-strings -fno-unit-at-a-time      -I../include -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/iconv -I.. -I../libio  -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc -I../sysdeps/ia64/elf -I../linuxthreads/sysdeps/unix/sysv/linux/ia64 -I../linuxthreads/sysdeps/unix/sysv/linux -I../linuxthreads/sysdeps/pthread -I../sysdeps/pthread -I../linuxthreads/sysdeps/unix/sysv -I../linuxthreads/sysdeps/unix -I../linuxthreads/sysdeps/ia64 -I../sysdeps/unix/sysv/linux/ia64 -I../sysdeps/unix/sysv/linux -I../sysdeps/gnu -I../sysdeps/unix/common -I../sysdeps/unix/mman -I../sysdeps/unix/inet -I../sysdeps/unix/sysv -I../sysdeps/unix -I../sysdeps/posix -I../sysdeps/ia64/fpu -I../sysdeps/ia64 -I../sysdeps/wordsize-64 -I../sysdeps/ieee754/ldbl-96 -I../sysdeps/ieee754/dbl-64 -I../sysdeps/ieee754/flt-32 -I../sysdeps/ieee754 -I../sysdeps/generic/elf -I../sysdeps/generic  -nostdinc -isystem /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/gcc-core-prefix/bin/../lib/gcc/ia64-unknown-linux-gnu/3.4.4/include -isystem /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/ia64-unknown-linux-gnu/ia64-unknown-linux-gnu/include -D_LIBC_REENTRANT -include ../include/libc-symbols.h     -o /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/iconv/strtab.o
+In file included from ../include/bits/string2.h:1,
+                 from ../string/string.h:360,
+                 from ../include/string.h:49,
+                 from strtab.c:27:
+../string/bits/string2.h:80: warning: `packed' attribute ignored
+../string/bits/string2.h:81: warning: `packed' attribute ignored
+../string/bits/string2.h:82: warning: `packed' attribute ignored
+../string/bits/string2.h:83: warning: `packed' attribute ignored
+../string/bits/string2.h:84: warning: `packed' attribute ignored
+../string/bits/string2.h:85: warning: `packed' attribute ignored
+../string/bits/string2.h:86: warning: `packed' attribute ignored
+ia64-unknown-linux-gnu-gcc  iconvconfig.c -c -O -Wall -Winline -Wstrict-prototypes -Wwrite-strings -fno-unit-at-a-time   -DGCONV_PATH='"/usr/lib/gconv"' -DGCONV_DIR='"/usr/lib/gconv"'   -I../include -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/iconv -I.. -I../libio  -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc -I../sysdeps/ia64/elf -I../linuxthreads/sysdeps/unix/sysv/linux/ia64 -I../linuxthreads/sysdeps/unix/sysv/linux -I../linuxthreads/sysdeps/pthread -I../sysdeps/pthread -I../linuxthreads/sysdeps/unix/sysv -I../linuxthreads/sysdeps/unix -I../linuxthreads/sysdeps/ia64 -I../sysdeps/unix/sysv/linux/ia64 -I../sysdeps/unix/sysv/linux -I../sysdeps/gnu -I../sysdeps/unix/common -I../sysdeps/unix/mman -I../sysdeps/unix/inet -I../sysdeps/unix/sysv -I../sysdeps/unix -I../sysdeps/posix -I../sysdeps/ia64/fpu -I../sysdeps/ia64 -I../sysdeps/wordsize-64 -I../sysdeps/ieee754/ldbl-96 -I../sysdeps/ieee754/dbl-64 -I../sysdeps/ieee754/flt-32 -I../sysdeps/ieee754 -I../sysdeps/generic/elf -I../sysdeps/generic  -nostdinc -isystem /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/gcc-core-prefix/bin/../lib/gcc/ia64-unknown-linux-gnu/3.4.4/include -isystem /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/ia64-unknown-linux-gnu/ia64-unknown-linux-gnu/include -D_LIBC_REENTRANT -include ../include/libc-symbols.h     -o /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/iconv/iconvconfig.o
+In file included from ../include/bits/string2.h:1,
+                 from ../string/string.h:360,
+                 from ../include/string.h:49,
+                 from iconvconfig.c:34:
+../string/bits/string2.h:80: warning: `packed' attribute ignored
+../string/bits/string2.h:81: warning: `packed' attribute ignored
+../string/bits/string2.h:82: warning: `packed' attribute ignored
+../string/bits/string2.h:83: warning: `packed' attribute ignored
+../string/bits/string2.h:84: warning: `packed' attribute ignored
+../string/bits/string2.h:85: warning: `packed' attribute ignored
+../string/bits/string2.h:86: warning: `packed' attribute ignored
+rm -f /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/libc.so.6.1.new
+/bin/sh ../scripts/rellns-sh /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/libc.so /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/libc.so.6.1.new
+mv -f /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/libc.so.6.1.new /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/libc.so.6.1
+ia64-unknown-linux-gnu-gcc  -nostdlib -nostartfiles -o /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/iconv/iconvconfig  -Wl,-dynamic-linker=/lib/ld-linux-ia64.so.2    /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/csu/crt1.o /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/csu/crti.o `ia64-unknown-linux-gnu-gcc  --print-file-name=crtbegin.o` /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/iconv/iconvconfig.o /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/iconv/strtab.o /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/iconv/xmalloc.o  -Wl,-rpath-link=/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc:/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/math:/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/elf:/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/dlfcn:/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/nss:/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/nis:/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/rt:/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/resolv:/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/crypt:/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/linuxthreads /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/libc.so.6.1 /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/libc_nonshared.a -lgcc `ia64-unknown-linux-gnu-gcc  --print-file-name=crtend.o` /home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/csu/crtn.o
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/libc.so.6.1: undefined reference to `__syscall_pread'
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/libc.so.6.1: undefined reference to `__syscall_pwrite'
+/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/libc.so.6.1: undefined reference to `__pwrite64'
+collect2: ld returned 1 exit status
+make[2]: *** [/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc/iconv/iconvconfig] Error 1
+make[2]: Leaving directory `/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/glibc-2.2.5/iconv'
+make[1]: *** [iconv/others] Error 2
+make[1]: Leaving directory `/home/dank/queue/jobdir.fast0/crosstool-0.37/build/ia64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/glibc-2.2.5'
+make: *** [all] Error 2
+
+real	16m39.387s
+user	13m29.060s
+sys	2m54.950s

@@ -1,0 +1,150 @@
+  NLS ISO 8859-6  (Arabic) (NLS_ISO8859_6) [N/m/y/?] n
+  NLS ISO 8859-7  (Modern Greek) (NLS_ISO8859_7) [N/m/y/?] n
+  NLS ISO 8859-9  (Latin 5; Turkish) (NLS_ISO8859_9) [N/m/y/?] n
+  NLS ISO 8859-13 (Latin 7; Baltic) (NLS_ISO8859_13) [N/m/y/?] n
+  NLS ISO 8859-14 (Latin 8; Celtic) (NLS_ISO8859_14) [N/m/y/?] n
+  NLS ISO 8859-15 (Latin 9; Western European Languages with Euro) (NLS_ISO8859_15) [N/m/y/?] n
+  NLS KOI8-R (Russian) (NLS_KOI8_R) [N/m/y/?] n
+  NLS KOI8-U/RU (Ukrainian, Belarusian) (NLS_KOI8_U) [N/m/y/?] n
+  NLS UTF8 (NLS_UTF8) [N/m/y/?] n
+*
+* Sound
+*
+Sound card support (SOUND) [N/m/y/?] (NEW) *
+* USB support
+*
+*
+* NOTE: USB_STORAGE enables SCSI, and 'SCSI disk support' may also be needed; see USB_STORAGE Help for more information
+*
+*
+* USB Gadget Support
+*
+Support for USB Gadgets (USB_GADGET) [N/m/y/?] (NEW) *
+* InfiniBand support
+*
+InfiniBand support (INFINIBAND) [N/m/y/?] (NEW) *
+* Watchdog Cards
+*
+Watchdog Timer Support (WATCHDOG) [N/y/?] (NEW) *
+* Kernel hacking
+*
+Kernel debugging (DEBUG_KERNEL) [N/y/?] (NEW) *
+* Security options
+*
+Enable access key retention support (KEYS) [N/y/?] (NEW) Enable different security models (SECURITY) [N/y/?] (NEW) *
+* Cryptographic options
+*
+Cryptographic API (CRYPTO) [N/y/?] (NEW) *
+* Hardware crypto devices
+*
+*
+* Library routines
+*
+CRC-CCITT functions (CRC_CCITT) [M/y/?] (NEW) CRC32 functions (CRC32) [Y/n/m/?] (NEW) CRC32c (Castagnoli, et al) Cyclic Redundancy-Check (LIBCRC32C) [N/m/y/?] (NEW) + make ARCH=sparc CROSS_COMPILE=/home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu- clean
++ make V=1 ARCH=sparc CROSS_COMPILE=/home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-
+if test ! /home/dank/queue/jobdir.fast6/crosstool-0.38/build/sparc-unknown-linux-gnu/gcc-4.1-20050716-glibc-2.3.2/linux-2.6.11.3 -ef /home/dank/queue/jobdir.fast6/crosstool-0.38/build/sparc-unknown-linux-gnu/gcc-4.1-20050716-glibc-2.3.2/linux-2.6.11.3; then \
+/bin/sh /home/dank/queue/jobdir.fast6/crosstool-0.38/build/sparc-unknown-linux-gnu/gcc-4.1-20050716-glibc-2.3.2/linux-2.6.11.3/scripts/mkmakefile              \
+    /home/dank/queue/jobdir.fast6/crosstool-0.38/build/sparc-unknown-linux-gnu/gcc-4.1-20050716-glibc-2.3.2/linux-2.6.11.3 /home/dank/queue/jobdir.fast6/crosstool-0.38/build/sparc-unknown-linux-gnu/gcc-4.1-20050716-glibc-2.3.2/linux-2.6.11.3 2 6         \
+    > /home/dank/queue/jobdir.fast6/crosstool-0.38/build/sparc-unknown-linux-gnu/gcc-4.1-20050716-glibc-2.3.2/linux-2.6.11.3/Makefile;                                 \
+    echo '  GEN    /home/dank/queue/jobdir.fast6/crosstool-0.38/build/sparc-unknown-linux-gnu/gcc-4.1-20050716-glibc-2.3.2/linux-2.6.11.3/Makefile';                   \
+fi
+  CHK     include/linux/version.h
+  UPD     include/linux/version.h
+  SYMLINK include/asm -> include/asm-sparc
+if [ ! -d include ]; then mkdir -p include; fi;
+  SPLIT   include/linux/autoconf.h -> include/config/*
+rm -rf .tmp_versions
+mkdir -p .tmp_versions
+make -f scripts/Makefile.build obj=scripts/basic
+  gcc -Wp,-MD,scripts/basic/.fixdep.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer        -o scripts/basic/fixdep scripts/basic/fixdep.c
+  gcc -Wp,-MD,scripts/basic/.split-include.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer        -o scripts/basic/split-include scripts/basic/split-include.c
+  gcc -Wp,-MD,scripts/basic/.docproc.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer        -o scripts/basic/docproc scripts/basic/docproc.c
+make -f scripts/Makefile.build obj=scripts
+make -f scripts/Makefile.build obj=scripts/genksyms
+  gcc -Wp,-MD,scripts/genksyms/.genksyms.o.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer       -c -o scripts/genksyms/genksyms.o scripts/genksyms/genksyms.c
+  cat scripts/genksyms/lex.c_shipped > scripts/genksyms/lex.c
+  cat scripts/genksyms/parse.h_shipped > scripts/genksyms/parse.h
+  cat scripts/genksyms/keywords.c_shipped > scripts/genksyms/keywords.c
+  gcc -Wp,-MD,scripts/genksyms/.lex.o.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer      -Iscripts/genksyms -c -o scripts/genksyms/lex.o scripts/genksyms/lex.c
+  cat scripts/genksyms/parse.c_shipped > scripts/genksyms/parse.c
+  gcc -Wp,-MD,scripts/genksyms/.parse.o.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer      -Wno-uninitialized -Iscripts/genksyms -c -o scripts/genksyms/parse.o scripts/genksyms/parse.c
+  gcc  -o scripts/genksyms/genksyms scripts/genksyms/genksyms.o scripts/genksyms/parse.o scripts/genksyms/lex.o  
+make -f scripts/Makefile.build obj=scripts/mod
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,scripts/mod/.empty.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m32 -pipe -mno-fpu -fcall-used-g5 -fcall-used-g7 -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=empty -DKBUILD_MODNAME=empty -c -o scripts/mod/.tmp_empty.o scripts/mod/empty.c
+  gcc -Wp,-MD,scripts/mod/.mk_elfconfig.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer        -o scripts/mod/mk_elfconfig scripts/mod/mk_elfconfig.c
+  scripts/mod/mk_elfconfig sparc < scripts/mod/empty.o > scripts/mod/elfconfig.h
+  gcc -Wp,-MD,scripts/mod/.file2alias.o.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer       -c -o scripts/mod/file2alias.o scripts/mod/file2alias.c
+  gcc -Wp,-MD,scripts/mod/.modpost.o.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer       -c -o scripts/mod/modpost.o scripts/mod/modpost.c
+  gcc -Wp,-MD,scripts/mod/.sumversion.o.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer       -c -o scripts/mod/sumversion.o scripts/mod/sumversion.c
+  gcc  -o scripts/mod/modpost scripts/mod/modpost.o scripts/mod/file2alias.o scripts/mod/sumversion.o  
+  gcc -Wp,-MD,scripts/.kallsyms.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer        -o scripts/kallsyms scripts/kallsyms.c
+  gcc -Wp,-MD,scripts/.conmakehash.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer        -o scripts/conmakehash scripts/conmakehash.c
+make -f scripts/Makefile.build obj=arch/sparc/kernel arch/sparc/kernel/asm-offsets.s
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,arch/sparc/kernel/.asm-offsets.s.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m32 -pipe -mno-fpu -fcall-used-g5 -fcall-used-g7 -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=asm_offsets -DKBUILD_MODNAME=asm_offsets -S -o arch/sparc/kernel/asm-offsets.s arch/sparc/kernel/asm-offsets.c 
+  CHK     include/asm-sparc/asm_offsets.h
+  UPD     include/asm-sparc/asm_offsets.h
+make -f scripts/Makefile.build obj=init
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,init/.main.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m32 -pipe -mno-fpu -fcall-used-g5 -fcall-used-g7 -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=main -DKBUILD_MODNAME=main -c -o init/.tmp_main.o init/main.c
+  CHK     include/linux/compile.h
+  UPD     include/linux/compile.h
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,init/.version.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m32 -pipe -mno-fpu -fcall-used-g5 -fcall-used-g7 -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=version -DKBUILD_MODNAME=version -c -o init/.tmp_version.o init/version.c
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,init/.do_mounts.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m32 -pipe -mno-fpu -fcall-used-g5 -fcall-used-g7 -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=do_mounts -DKBUILD_MODNAME=mounts -c -o init/.tmp_do_mounts.o init/do_mounts.c
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,init/.do_mounts_rd.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m32 -pipe -mno-fpu -fcall-used-g5 -fcall-used-g7 -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=do_mounts_rd -DKBUILD_MODNAME=mounts -c -o init/.tmp_do_mounts_rd.o init/do_mounts_rd.c
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,init/.do_mounts_initrd.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m32 -pipe -mno-fpu -fcall-used-g5 -fcall-used-g7 -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=do_mounts_initrd -DKBUILD_MODNAME=mounts -c -o init/.tmp_do_mounts_initrd.o init/do_mounts_initrd.c
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-ld -m elf32_sparc  -r -o init/mounts.o init/do_mounts.o init/do_mounts_rd.o init/do_mounts_initrd.o
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,init/.initramfs.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m32 -pipe -mno-fpu -fcall-used-g5 -fcall-used-g7 -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=initramfs -DKBUILD_MODNAME=initramfs -c -o init/.tmp_initramfs.o init/initramfs.c
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,init/.calibrate.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m32 -pipe -mno-fpu -fcall-used-g5 -fcall-used-g7 -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=calibrate -DKBUILD_MODNAME=calibrate -c -o init/.tmp_calibrate.o init/calibrate.c
+   /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-ld -m elf32_sparc  -r -o init/built-in.o init/main.o init/version.o init/mounts.o init/initramfs.o init/calibrate.o
+make -f scripts/Makefile.build obj=usr
+  gcc -Wp,-MD,usr/.gen_init_cpio.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer        -o usr/gen_init_cpio usr/gen_init_cpio.c
+set -e; echo '  CHK     usr/initramfs_list'; mkdir -p usr/; /bin/sh /home/dank/queue/jobdir.fast6/crosstool-0.38/build/sparc-unknown-linux-gnu/gcc-4.1-20050716-glibc-2.3.2/linux-2.6.11.3/scripts/gen_initramfs_list.sh    > usr/initramfs_list.tmp; if [ -r usr/initramfs_list ] && cmp -s usr/initramfs_list usr/initramfs_list.tmp; then rm -f usr/initramfs_list.tmp; else echo '  UPD     usr/initramfs_list'; mv -f usr/initramfs_list.tmp usr/initramfs_list; fi
+  CHK     usr/initramfs_list
+  UPD     usr/initramfs_list
+  ./usr/gen_init_cpio usr/initramfs_list > usr/initramfs_data.cpio
+  gzip -f -9 < usr/initramfs_data.cpio > usr/initramfs_data.cpio.gz
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,usr/.initramfs_data.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -D__ASSEMBLY__ -m32    -c -o usr/initramfs_data.o usr/initramfs_data.S
+usr/initramfs_data.S: Assembler messages:
+usr/initramfs_data.S:1: Warning: line numbers must be positive; line number 0 rejected
+   /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-ld -m elf32_sparc  -r -o usr/built-in.o usr/initramfs_data.o
+make -f scripts/Makefile.build obj=arch/sparc/kernel
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,arch/sparc/kernel/.entry.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -D__ASSEMBLY__ -m32 -ansi   -c -o arch/sparc/kernel/entry.o arch/sparc/kernel/entry.S
+arch/sparc/kernel/entry.S: Assembler messages:
+arch/sparc/kernel/entry.S:1: Warning: line numbers must be positive; line number 0 rejected
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,arch/sparc/kernel/.wof.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -D__ASSEMBLY__ -m32 -ansi   -c -o arch/sparc/kernel/wof.o arch/sparc/kernel/wof.S
+arch/sparc/kernel/wof.S: Assembler messages:
+arch/sparc/kernel/wof.S:1: Warning: line numbers must be positive; line number 0 rejected
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,arch/sparc/kernel/.wuf.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -D__ASSEMBLY__ -m32 -ansi   -c -o arch/sparc/kernel/wuf.o arch/sparc/kernel/wuf.S
+arch/sparc/kernel/wuf.S: Assembler messages:
+arch/sparc/kernel/wuf.S:1: Warning: line numbers must be positive; line number 0 rejected
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,arch/sparc/kernel/.etrap.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -D__ASSEMBLY__ -m32 -ansi   -c -o arch/sparc/kernel/etrap.o arch/sparc/kernel/etrap.S
+arch/sparc/kernel/etrap.S: Assembler messages:
+arch/sparc/kernel/etrap.S:1: Warning: line numbers must be positive; line number 0 rejected
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,arch/sparc/kernel/.rtrap.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -D__ASSEMBLY__ -m32 -ansi   -c -o arch/sparc/kernel/rtrap.o arch/sparc/kernel/rtrap.S
+arch/sparc/kernel/rtrap.S: Assembler messages:
+arch/sparc/kernel/rtrap.S:1: Warning: line numbers must be positive; line number 0 rejected
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,arch/sparc/kernel/.traps.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m32 -pipe -mno-fpu -fcall-used-g5 -fcall-used-g7 -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=traps -DKBUILD_MODNAME=traps -c -o arch/sparc/kernel/.tmp_traps.o arch/sparc/kernel/traps.c
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,arch/sparc/kernel/.irq.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m32 -pipe -mno-fpu -fcall-used-g5 -fcall-used-g7 -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=irq -DKBUILD_MODNAME=irq -c -o arch/sparc/kernel/.tmp_irq.o arch/sparc/kernel/irq.c
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,arch/sparc/kernel/.sun4m_irq.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m32 -pipe -mno-fpu -fcall-used-g5 -fcall-used-g7 -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=sun4m_irq -DKBUILD_MODNAME=sun4m_irq -c -o arch/sparc/kernel/.tmp_sun4m_irq.o arch/sparc/kernel/sun4m_irq.c
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,arch/sparc/kernel/.sun4c_irq.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m32 -pipe -mno-fpu -fcall-used-g5 -fcall-used-g7 -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=sun4c_irq -DKBUILD_MODNAME=sun4c_irq -c -o arch/sparc/kernel/.tmp_sun4c_irq.o arch/sparc/kernel/sun4c_irq.c
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,arch/sparc/kernel/.sun4d_irq.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m32 -pipe -mno-fpu -fcall-used-g5 -fcall-used-g7 -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=sun4d_irq -DKBUILD_MODNAME=sun4d_irq -c -o arch/sparc/kernel/.tmp_sun4d_irq.o arch/sparc/kernel/sun4d_irq.c
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,arch/sparc/kernel/.process.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m32 -pipe -mno-fpu -fcall-used-g5 -fcall-used-g7 -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=process -DKBUILD_MODNAME=process -c -o arch/sparc/kernel/.tmp_process.o arch/sparc/kernel/process.c
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,arch/sparc/kernel/.signal.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m32 -pipe -mno-fpu -fcall-used-g5 -fcall-used-g7 -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=signal -DKBUILD_MODNAME=signal -c -o arch/sparc/kernel/.tmp_signal.o arch/sparc/kernel/signal.c
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,arch/sparc/kernel/.ioport.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m32 -pipe -mno-fpu -fcall-used-g5 -fcall-used-g7 -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=ioport -DKBUILD_MODNAME=ioport -c -o arch/sparc/kernel/.tmp_ioport.o arch/sparc/kernel/ioport.c
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,arch/sparc/kernel/.setup.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m32 -pipe -mno-fpu -fcall-used-g5 -fcall-used-g7 -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=setup -DKBUILD_MODNAME=setup -c -o arch/sparc/kernel/.tmp_setup.o arch/sparc/kernel/setup.c
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,arch/sparc/kernel/.idprom.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m32 -pipe -mno-fpu -fcall-used-g5 -fcall-used-g7 -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=idprom -DKBUILD_MODNAME=idprom -c -o arch/sparc/kernel/.tmp_idprom.o arch/sparc/kernel/idprom.c
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,arch/sparc/kernel/.sys_sparc.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m32 -pipe -mno-fpu -fcall-used-g5 -fcall-used-g7 -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=sys_sparc -DKBUILD_MODNAME=sys_sparc -c -o arch/sparc/kernel/.tmp_sys_sparc.o arch/sparc/kernel/sys_sparc.c
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,arch/sparc/kernel/.sunos_asm.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -D__ASSEMBLY__ -m32 -ansi   -c -o arch/sparc/kernel/sunos_asm.o arch/sparc/kernel/sunos_asm.S
+arch/sparc/kernel/sunos_asm.S: Assembler messages:
+arch/sparc/kernel/sunos_asm.S:1: Warning: line numbers must be positive; line number 0 rejected
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,arch/sparc/kernel/.systbls.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -D__ASSEMBLY__ -m32 -ansi   -c -o arch/sparc/kernel/systbls.o arch/sparc/kernel/systbls.S
+arch/sparc/kernel/systbls.S: Assembler messages:
+arch/sparc/kernel/systbls.S:1: Warning: line numbers must be positive; line number 0 rejected
+  /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/sparc-unknown-linux-gnu-gcc -Wp,-MD,arch/sparc/kernel/.time.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050716-glibc-2.3.2/sparc-unknown-linux-gnu/bin/../lib/gcc/sparc-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m32 -pipe -mno-fpu -fcall-used-g5 -fcall-used-g7 -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=time -DKBUILD_MODNAME=time -c -o arch/sparc/kernel/.tmp_time.o arch/sparc/kernel/time.c
+arch/sparc/kernel/time.c:57: error: static declaration of 'mstk48t08_regs' follows non-static declaration
+include/asm/mostek.h:131: error: previous declaration of 'mstk48t08_regs' was here
+make[1]: *** [arch/sparc/kernel/time.o] Error 1
+make: *** [arch/sparc/kernel] Error 2
+
+real	55m0.793s
+user	47m20.930s
+sys	7m0.170s

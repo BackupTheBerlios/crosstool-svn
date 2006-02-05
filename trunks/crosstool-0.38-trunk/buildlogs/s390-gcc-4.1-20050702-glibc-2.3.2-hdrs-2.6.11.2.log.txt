@@ -1,0 +1,150 @@
+  *
+  Wan interfaces support (WAN) [N/y/?] (NEW)   *
+  * S/390 network device drivers
+  *
+  Lan Channel Station Interface (LCS) [N/m/y/?] (NEW)   CTC device support (CTC) [M/n/y/?] m
+  IUCV support (VM only) (IUCV) [M/n/y/?] m
+    IUCV network device support (VM only) (NETIUCV) [N/m/?] (NEW)     IUCV special message support (VM only) (SMSGIUCV) [N/m/?] (NEW)   VLAN support for gigabit ethernet (QETH_VLAN) [N/y/?] (NEW)   PPP (point-to-point protocol) support (PPP) [N/m/y/?] (NEW)   SLIP (serial line) support (SLIP) [N/m/y/?] (NEW)   Traffic Shaper (EXPERIMENTAL) (SHAPER) [N/m/y/?] (NEW)   Network console logging support (EXPERIMENTAL) (NETCONSOLE) [N/m/y/?] (NEW) *
+* File systems
+*
+Second extended fs support (EXT2_FS) [Y/n/m/?] y
+  Ext2 extended attributes (EXT2_FS_XATTR) [N/y/?] (NEW) Ext3 journalling file system support (EXT3_FS) [N/m/y/?] n
+Reiserfs support (REISERFS_FS) [N/m/y/?] n
+JFS filesystem support (JFS_FS) [N/m/y/?] (NEW) *
+* XFS support
+*
+XFS filesystem support (XFS_FS) [N/m/y/?] (NEW) Minix fs support (MINIX_FS) [N/m/y/?] n
+ROM file system support (ROMFS_FS) [N/m/y/?] n
+Quota support (QUOTA) [N/y/?] n
+Kernel automounter support (AUTOFS_FS) [N/m/y/?] n
+Kernel automounter version 4 support (also supports v3) (AUTOFS4_FS) [N/m/y/?] n
+*
+* CD-ROM/DVD Filesystems
+*
+ISO 9660 CDROM file system support (ISO9660_FS) [N/m/y/?] n
+UDF file system support (UDF_FS) [N/m/y/?] n
+*
+* DOS/FAT/NT Filesystems
+*
+MSDOS fs support (MSDOS_FS) [N/m/y/?] n
+VFAT (Windows-95) fs support (VFAT_FS) [N/m/y/?] n
+NTFS file system support (NTFS_FS) [N/m/y/?] n
+*
+* Pseudo filesystems
+*
+/proc file system support (PROC_FS) [Y/n/?] y
+  /proc/kcore support (PROC_KCORE) [N/y] (NEW) /dev file system support (OBSOLETE) (DEVFS_FS) [Y/n/?] y
+  Automatically mount at boot (DEVFS_MOUNT) [Y/n/?] y
+  Debug devfs (DEVFS_DEBUG) [N/y/?] n
+/dev/pts Extended Attributes (DEVPTS_FS_XATTR) [N/y/?] (NEW) Virtual memory file system support (former shm fs) (TMPFS) [N/y/?] n
+*
+* Miscellaneous filesystems
+*
+ADFS file system support (EXPERIMENTAL) (ADFS_FS) [N/m/y/?] n
+Amiga FFS file system support (EXPERIMENTAL) (AFFS_FS) [N/m/y/?] n
+Apple Macintosh file system support (EXPERIMENTAL) (HFS_FS) [N/m/y/?] n
+Apple Extended HFS file system support (HFSPLUS_FS) [N/m/y/?] (NEW) BeOS file system (BeFS) support (read only) (EXPERIMENTAL) (BEFS_FS) [N/m/y/?] (NEW) BFS file system support (EXPERIMENTAL) (BFS_FS) [N/m/y/?] n
+EFS file system support (read only) (EXPERIMENTAL) (EFS_FS) [N/m/y/?] n
+Compressed ROM file system support (cramfs) (CRAMFS) [N/m/y/?] n
+FreeVxFS file system support (VERITAS VxFS(TM) compatible) (VXFS_FS) [N/m/y/?] n
+OS/2 HPFS file system support (HPFS_FS) [N/m/y/?] n
+QNX4 file system support (read only) (QNX4FS_FS) [N/m/y/?] n
+System V/Xenix/V7/Coherent file system support (SYSV_FS) [N/m/y/?] n
+UFS file system support (read only) (UFS_FS) [N/m/y/?] n
+*
+* Network File Systems
+*
+NFS file system support (NFS_FS) [Y/n/m/?] y
+  Provide NFSv3 client support (NFS_V3) [N/y/?] n
+  Provide NFSv4 client support (EXPERIMENTAL) (NFS_V4) [N/y/?] (NEW)   Allow direct I/O on NFS files (EXPERIMENTAL) (NFS_DIRECTIO) [N/y/?] (NEW) NFS server support (NFSD) [Y/n/m/?] y
+  Provide NFSv3 server support (NFSD_V3) [N/y/?] n
+  Provide NFS server over TCP support (NFSD_TCP) [Y/n/?] (NEW) Secure RPC: Kerberos V mechanism (EXPERIMENTAL) (RPCSEC_GSS_KRB5) [N/m/y/?] (NEW) Secure RPC: SPKM3 mechanism (EXPERIMENTAL) (RPCSEC_GSS_SPKM3) [N/m/y/?] (NEW) SMB file system support (to mount Windows shares etc.) (SMB_FS) [N/m/y/?] n
+CIFS support (advanced network filesystem for Samba, Window and other CIFS compliant servers) (CIFS) [N/m/y/?] (NEW) NCP file system support (to mount NetWare volumes) (NCP_FS) [N/m/y/?] n
+Coda file system support (advanced network fs) (CODA_FS) [N/m/y/?] n
+Andrew File System support (AFS) (Experimental) (AFS_FS) [N/m/y/?] (NEW) *
+* Partition Types
+*
+Advanced partition selection (PARTITION_ADVANCED) [Y/n/?] y
+  Acorn partition support (ACORN_PARTITION) [N/y/?] n
+  Alpha OSF partition support (OSF_PARTITION) [N/y/?] n
+  Amiga partition table support (AMIGA_PARTITION) [N/y/?] n
+  Atari partition table support (ATARI_PARTITION) [N/y/?] n
+  IBM disk label and partition support (IBM_PARTITION) [Y/n/?] y
+  Macintosh partition map support (MAC_PARTITION) [N/y/?] n
+  PC BIOS (MSDOS partition tables) support (MSDOS_PARTITION) [N/y/?] n
+  Windows Logical Disk Manager (Dynamic Disk) support (LDM_PARTITION) [N/y/?] n
+  SGI partition support (SGI_PARTITION) [N/y/?] n
+  Ultrix partition table support (ULTRIX_PARTITION) [N/y/?] n
+  Sun partition tables support (SUN_PARTITION) [N/y/?] n
+  EFI GUID Partition support (EFI_PARTITION) [N/y/?] (NEW) *
+* Native Language Support
+*
+Base native language support (NLS) [N/m/y/?] n
+*
+* Profiling support
+*
+Profiling support (EXPERIMENTAL) (PROFILING) [N/y/?] (NEW) *
+* Kernel hacking
+*
+Kernel debugging (DEBUG_KERNEL) [N/y/?] (NEW) *
+* Security options
+*
+Enable access key retention support (KEYS) [N/y/?] (NEW) Enable different security models (SECURITY) [N/y/?] (NEW) *
+* Cryptographic options
+*
+Cryptographic API (CRYPTO) [N/y/?] (NEW) *
+* Hardware crypto devices
+*
+*
+* Library routines
+*
+CRC-CCITT functions (CRC_CCITT) [N/m/y/?] (NEW) CRC32 functions (CRC32) [Y/n/m/?] (NEW) CRC32c (Castagnoli, et al) Cyclic Redundancy-Check (LIBCRC32C) [N/m/y/?] (NEW) + make ARCH=s390 CROSS_COMPILE=/home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/s390-unknown-linux-gnu/bin/s390-unknown-linux-gnu- clean
++ make V=1 ARCH=s390 CROSS_COMPILE=/home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/s390-unknown-linux-gnu/bin/s390-unknown-linux-gnu-
+if test ! /home/dank/queue/jobdir.fast/crosstool-0.37/build/s390-unknown-linux-gnu/gcc-4.1-20050702-glibc-2.3.2/linux-2.6.11.3 -ef /home/dank/queue/jobdir.fast/crosstool-0.37/build/s390-unknown-linux-gnu/gcc-4.1-20050702-glibc-2.3.2/linux-2.6.11.3; then \
+/bin/sh /home/dank/queue/jobdir.fast/crosstool-0.37/build/s390-unknown-linux-gnu/gcc-4.1-20050702-glibc-2.3.2/linux-2.6.11.3/scripts/mkmakefile              \
+    /home/dank/queue/jobdir.fast/crosstool-0.37/build/s390-unknown-linux-gnu/gcc-4.1-20050702-glibc-2.3.2/linux-2.6.11.3 /home/dank/queue/jobdir.fast/crosstool-0.37/build/s390-unknown-linux-gnu/gcc-4.1-20050702-glibc-2.3.2/linux-2.6.11.3 2 6         \
+    > /home/dank/queue/jobdir.fast/crosstool-0.37/build/s390-unknown-linux-gnu/gcc-4.1-20050702-glibc-2.3.2/linux-2.6.11.3/Makefile;                                 \
+    echo '  GEN    /home/dank/queue/jobdir.fast/crosstool-0.37/build/s390-unknown-linux-gnu/gcc-4.1-20050702-glibc-2.3.2/linux-2.6.11.3/Makefile';                   \
+fi
+  CHK     include/linux/version.h
+  UPD     include/linux/version.h
+  SYMLINK include/asm -> include/asm-s390
+if [ ! -d include ]; then mkdir -p include; fi;
+  SPLIT   include/linux/autoconf.h -> include/config/*
+rm -rf .tmp_versions
+mkdir -p .tmp_versions
+make -f scripts/Makefile.build obj=scripts/basic
+  gcc -Wp,-MD,scripts/basic/.fixdep.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer        -o scripts/basic/fixdep scripts/basic/fixdep.c
+  gcc -Wp,-MD,scripts/basic/.split-include.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer        -o scripts/basic/split-include scripts/basic/split-include.c
+  gcc -Wp,-MD,scripts/basic/.docproc.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer        -o scripts/basic/docproc scripts/basic/docproc.c
+make -f scripts/Makefile.build obj=scripts
+make -f scripts/Makefile.build obj=scripts/mod
+  /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/s390-unknown-linux-gnu/bin/s390-unknown-linux-gnu-gcc -Wp,-MD,scripts/mod/.empty.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/s390-unknown-linux-gnu/bin/../lib/gcc/s390-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m31 -mbackchain -march=g5 -finline-limit=10000 -pipe -fno-strength-reduce -Wno-sign-compare  -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=empty -DKBUILD_MODNAME=empty -c -o scripts/mod/empty.o scripts/mod/empty.c
+  gcc -Wp,-MD,scripts/mod/.mk_elfconfig.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer        -o scripts/mod/mk_elfconfig scripts/mod/mk_elfconfig.c
+  scripts/mod/mk_elfconfig s390 < scripts/mod/empty.o > scripts/mod/elfconfig.h
+  gcc -Wp,-MD,scripts/mod/.file2alias.o.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer       -c -o scripts/mod/file2alias.o scripts/mod/file2alias.c
+  gcc -Wp,-MD,scripts/mod/.modpost.o.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer       -c -o scripts/mod/modpost.o scripts/mod/modpost.c
+  gcc -Wp,-MD,scripts/mod/.sumversion.o.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer       -c -o scripts/mod/sumversion.o scripts/mod/sumversion.c
+  gcc  -o scripts/mod/modpost scripts/mod/modpost.o scripts/mod/file2alias.o scripts/mod/sumversion.o  
+  gcc -Wp,-MD,scripts/.kallsyms.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer        -o scripts/kallsyms scripts/kallsyms.c
+make -f scripts/Makefile.build obj=arch/s390/kernel arch/s390/kernel/asm-offsets.s
+  /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/s390-unknown-linux-gnu/bin/s390-unknown-linux-gnu-gcc -Wp,-MD,arch/s390/kernel/.asm-offsets.s.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/s390-unknown-linux-gnu/bin/../lib/gcc/s390-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m31 -mbackchain -march=g5 -finline-limit=10000 -pipe -fno-strength-reduce -Wno-sign-compare  -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=asm_offsets -DKBUILD_MODNAME=asm_offsets -S -o arch/s390/kernel/asm-offsets.s arch/s390/kernel/asm-offsets.c 
+  CHK     include/asm-s390/offsets.h
+  UPD     include/asm-s390/offsets.h
+make -f scripts/Makefile.build obj=init
+  /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/s390-unknown-linux-gnu/bin/s390-unknown-linux-gnu-gcc -Wp,-MD,init/.main.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/s390-unknown-linux-gnu/bin/../lib/gcc/s390-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m31 -mbackchain -march=g5 -finline-limit=10000 -pipe -fno-strength-reduce -Wno-sign-compare  -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=main -DKBUILD_MODNAME=main -c -o init/main.o init/main.c
+  CHK     include/linux/compile.h
+  UPD     include/linux/compile.h
+  /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/s390-unknown-linux-gnu/bin/s390-unknown-linux-gnu-gcc -Wp,-MD,init/.version.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/s390-unknown-linux-gnu/bin/../lib/gcc/s390-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m31 -mbackchain -march=g5 -finline-limit=10000 -pipe -fno-strength-reduce -Wno-sign-compare  -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=version -DKBUILD_MODNAME=version -c -o init/version.o init/version.c
+  /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/s390-unknown-linux-gnu/bin/s390-unknown-linux-gnu-gcc -Wp,-MD,init/.do_mounts.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/s390-unknown-linux-gnu/bin/../lib/gcc/s390-unknown-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -m31 -mbackchain -march=g5 -finline-limit=10000 -pipe -fno-strength-reduce -Wno-sign-compare  -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=do_mounts -DKBUILD_MODNAME=mounts -c -o init/do_mounts.o init/do_mounts.c
+In file included from include/linux/nfs_fs.h:15,
+                 from init/do_mounts.c:11:
+include/linux/pagemap.h: In function 'fault_in_pages_readable':
+include/linux/pagemap.h:236: error: assignment of read-only variable '__x'
+include/linux/pagemap.h:242: error: assignment of read-only variable '__x'
+make[1]: *** [init/do_mounts.o] Error 1
+make: *** [init] Error 2
+
+real	47m10.351s
+user	39m51.880s
+sys	6m25.460s

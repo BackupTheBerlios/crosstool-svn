@@ -1,0 +1,150 @@
+checking host system type... i686-host_pc-linux-gnu
+checking target system type... arm-iwmmxt-linux-gnu
+checking build system type... i686-host_pc-linux-gnu
+checking for gcc... (cached) gcc
+checking whether the C compiler (gcc -g -O2 ) works... yes
+checking whether the C compiler (gcc -g -O2 ) is a cross-compiler... no
+checking whether we are using GNU C... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking whether gcc and cc understand -c and -o together... (cached) yes
+checking for gnatbind... no
+checking for compiler driver that understands Ada... no
+checking whether gcc accepts -Wno-long-long... yes
+checking how to run the C preprocessor... (cached) gcc -E
+checking for inline... (cached) inline
+checking for volatile... yes
+checking for long double... yes
+checking for long long int... yes
+checking for __int64... no
+checking for built-in _Bool... yes
+checking size of short... 2
+checking size of int... 4
+checking size of long... 4
+checking size of long long... 8
+checking execution character set... ASCII
+checking whether make sets ${MAKE}... yes
+checking whether a default assembler was specified... no
+checking whether a default linker was specified... no
+checking for GNU C library... yes
+checking for mawk... no
+checking for gawk... gawk
+checking whether ln works... yes
+checking whether ln -s works... yes
+checking for ranlib... (cached) ranlib
+checking for a BSD compatible install... (cached) /usr/bin/install -c
+checking for ANSI C header files... (cached) yes
+checking whether time.h and sys/time.h may both be included... (cached) yes
+checking for working stdbool.h... yes
+checking whether string.h and strings.h may both be included... yes
+checking for sys/wait.h that is POSIX.1 compatible... (cached) yes
+checking for limits.h... (cached) yes
+checking for stddef.h... yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for time.h... (cached) yes
+checking for fcntl.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/file.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking for sys/mman.h... (cached) yes
+checking for sys/resource.h... (cached) yes
+checking for sys/param.h... (cached) yes
+checking for sys/times.h... yes
+checking for sys/stat.h... (cached) yes
+checking for direct.h... no
+checking for malloc.h... (cached) yes
+checking for langinfo.h... yes
+checking for thread.h... no
+checking for pthread.h... yes
+checking for CHAR_BIT... yes
+checking byte ordering... little-endian
+checking floating point format... IEEE (little-endian)
+checking for mktemp... yes
+checking for makeinfo... (cached) makeinfo
+checking for modern makeinfo... no
+configure: warning: 
+*** Makeinfo is missing or too old.
+*** Info documentation will not be built.
+checking for recent Pod::Man... no
+checking for flex... flex
+checking for bison... bison
+checking for collect2 libraries... none required
+checking for library containing exc_resume... no
+checking for library containing ldexp... none required
+checking for preprocessor stringizing operator... yes
+checking for inttypes.h... yes
+checking for times... (cached) yes
+checking for clock... (cached) yes
+checking for dup2... yes
+checking for kill... yes
+checking for getrlimit... yes
+checking for setrlimit... yes
+checking for atoll... yes
+checking for atoq... no
+checking for sysconf... (cached) yes
+checking for strsignal... (cached) yes
+checking for putc_unlocked... yes
+checking for fputc_unlocked... yes
+checking for fputs_unlocked... yes
+checking for fwrite_unlocked... yes
+checking for fprintf_unlocked... no
+checking for getrusage... (cached) yes
+checking for nl_langinfo... yes
+checking for lstat... yes
+checking for scandir... yes
+checking for alphasort... yes
+checking for gettimeofday... (cached) yes
+checking for mmap... yes
+checking for ssize_t... yes
+checking for uid_t in sys/types.h... yes
+checking type of array argument to getgroups... gid_t
+checking whether the printf functions support %p... yes
+checking whether read-only mmap of a plain file works... yes
+checking whether mmap from /dev/zero works... yes
+checking for MAP_ANON(YMOUS)... yes
+checking whether mmap with MAP_ANON(YMOUS) works... yes
+checking for pid_t... (cached) yes
+checking for vfork.h... (cached) no
+checking for working vfork... (cached) yes
+checking for iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking whether getenv is declared... yes
+checking whether atol is declared... yes
+checking whether sbrk is declared... yes
+checking whether abort is declared... yes
+checking whether atof is declared... yes
+checking whether getcwd is declared... yes
+checking whether getwd is declared... yes
+checking whether strsignal is declared... yes
+checking whether putc_unlocked is declared... yes
+checking whether fputs_unlocked is declared... yes
+checking whether fwrite_unlocked is declared... yes
+checking whether fprintf_unlocked is declared... no
+checking whether strstr is declared... yes
+checking whether errno is declared... yes
+checking whether vasprintf is declared... yes
+checking whether malloc is declared... yes
+checking whether realloc is declared... yes
+checking whether calloc is declared... yes
+checking whether free is declared... yes
+checking whether basename is declared... yes
+checking whether getopt is declared... no
+checking whether clock is declared... yes
+checking whether getrlimit is declared... yes
+checking whether setrlimit is declared... yes
+checking whether getrusage is declared... yes
+checking whether times is declared... yes
+checking for struct tms... yes
+checking for clock_t... yes
+checking for uchar... 
+checking for .preinit_array/.init_array/.fini_array support... no
+checking if mkdir takes one argument... no
+checking for main in -lunwind... no
+Unknown cpu used with --with-cpu=iwmmxt
+Configure in /home/dank/queue/jobdir.fast0/crosstool-0.37/build/arm-iwmmxt-linux-gnu/gcc-3.3.6-glibc-2.3.5/build-gcc-core/gcc failed, exiting.
+
+real	4m56.125s
+user	3m26.460s
+sys	0m50.740s
