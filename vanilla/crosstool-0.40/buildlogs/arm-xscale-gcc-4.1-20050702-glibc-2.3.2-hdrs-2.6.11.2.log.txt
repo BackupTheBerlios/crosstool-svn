@@ -1,0 +1,150 @@
+                 from include/linux/capability.h:45,
+                 from include/linux/sched.h:7,
+                 from include/linux/module.h:10,
+                 from drivers/block/genhd.c:6:
+include/asm/cpu-single.h:44: warning: type qualifiers ignored on function return type
+In file included from include/linux/kernel.h:17,
+                 from include/linux/spinlock.h:13,
+                 from include/linux/capability.h:45,
+                 from include/linux/sched.h:7,
+                 from include/linux/module.h:10,
+                 from drivers/block/genhd.c:6:
+include/asm/bug.h:7: warning: type qualifiers ignored on function return type
+  /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/arm-xscale-linux-gnu/bin/arm-xscale-linux-gnu-gcc -Wp,-MD,drivers/block/.scsi_ioctl.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/arm-xscale-linux-gnu/bin/../lib/gcc/arm-xscale-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -Os     -fno-omit-frame-pointer -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mlittle-endian -mabi=apcs-gnu -D__LINUX_ARM_ARCH__=4 -march=armv4 -mtune=strongarm110  -msoft-float -Uarm -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=scsi_ioctl -DKBUILD_MODNAME=scsi_ioctl -c -o drivers/block/scsi_ioctl.o drivers/block/scsi_ioctl.c
+In file included from include/asm/proc-fns.h:154,
+                 from include/asm/system.h:94,
+                 from include/asm/bitops.h:22,
+                 from include/linux/bitops.h:77,
+                 from include/linux/kernel.h:15,
+                 from drivers/block/scsi_ioctl.c:19:
+include/asm/cpu-single.h:44: warning: type qualifiers ignored on function return type
+In file included from include/linux/kernel.h:17,
+                 from drivers/block/scsi_ioctl.c:19:
+include/asm/bug.h:7: warning: type qualifiers ignored on function return type
+  /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/arm-xscale-linux-gnu/bin/arm-xscale-linux-gnu-gcc -Wp,-MD,drivers/block/.noop-iosched.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/arm-xscale-linux-gnu/bin/../lib/gcc/arm-xscale-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -Os     -fno-omit-frame-pointer -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mlittle-endian -mabi=apcs-gnu -D__LINUX_ARM_ARCH__=4 -march=armv4 -mtune=strongarm110  -msoft-float -Uarm -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=noop_iosched -DKBUILD_MODNAME=noop_iosched -c -o drivers/block/noop-iosched.o drivers/block/noop-iosched.c
+In file included from include/asm/proc-fns.h:154,
+                 from include/asm/system.h:94,
+                 from include/linux/list.h:8,
+                 from include/linux/kobject.h:21,
+                 from include/linux/device.h:16,
+                 from include/linux/genhd.h:15,
+                 from include/linux/blkdev.h:6,
+                 from drivers/block/noop-iosched.c:4:
+include/asm/cpu-single.h:44: warning: type qualifiers ignored on function return type
+In file included from include/linux/kernel.h:17,
+                 from include/linux/rwsem.h:18,
+                 from include/linux/kobject.h:23,
+                 from include/linux/device.h:16,
+                 from include/linux/genhd.h:15,
+                 from include/linux/blkdev.h:6,
+                 from drivers/block/noop-iosched.c:4:
+include/asm/bug.h:7: warning: type qualifiers ignored on function return type
+  /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/arm-xscale-linux-gnu/bin/arm-xscale-linux-gnu-gcc -Wp,-MD,drivers/block/.as-iosched.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/arm-xscale-linux-gnu/bin/../lib/gcc/arm-xscale-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -Os     -fno-omit-frame-pointer -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mlittle-endian -mabi=apcs-gnu -D__LINUX_ARM_ARCH__=4 -march=armv4 -mtune=strongarm110  -msoft-float -Uarm -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=as_iosched -DKBUILD_MODNAME=as_iosched -c -o drivers/block/as-iosched.o drivers/block/as-iosched.c
+In file included from include/asm/proc-fns.h:154,
+                 from include/asm/system.h:94,
+                 from include/asm/bitops.h:22,
+                 from include/linux/bitops.h:77,
+                 from include/linux/kernel.h:15,
+                 from drivers/block/as-iosched.c:10:
+include/asm/cpu-single.h:44: warning: type qualifiers ignored on function return type
+In file included from include/linux/kernel.h:17,
+                 from drivers/block/as-iosched.c:10:
+include/asm/bug.h:7: warning: type qualifiers ignored on function return type
+  /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/arm-xscale-linux-gnu/bin/arm-xscale-linux-gnu-gcc -Wp,-MD,drivers/block/.deadline-iosched.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/arm-xscale-linux-gnu/bin/../lib/gcc/arm-xscale-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -Os     -fno-omit-frame-pointer -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mlittle-endian -mabi=apcs-gnu -D__LINUX_ARM_ARCH__=4 -march=armv4 -mtune=strongarm110  -msoft-float -Uarm -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=deadline_iosched -DKBUILD_MODNAME=deadline_iosched -c -o drivers/block/deadline-iosched.o drivers/block/deadline-iosched.c
+In file included from include/asm/proc-fns.h:154,
+                 from include/asm/system.h:94,
+                 from include/asm/bitops.h:22,
+                 from include/linux/bitops.h:77,
+                 from include/linux/kernel.h:15,
+                 from drivers/block/deadline-iosched.c:8:
+include/asm/cpu-single.h:44: warning: type qualifiers ignored on function return type
+In file included from include/linux/kernel.h:17,
+                 from drivers/block/deadline-iosched.c:8:
+include/asm/bug.h:7: warning: type qualifiers ignored on function return type
+  /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/arm-xscale-linux-gnu/bin/arm-xscale-linux-gnu-gcc -Wp,-MD,drivers/block/.cfq-iosched.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/arm-xscale-linux-gnu/bin/../lib/gcc/arm-xscale-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -Os     -fno-omit-frame-pointer -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mlittle-endian -mabi=apcs-gnu -D__LINUX_ARM_ARCH__=4 -march=armv4 -mtune=strongarm110  -msoft-float -Uarm -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=cfq_iosched -DKBUILD_MODNAME=cfq_iosched -c -o drivers/block/cfq-iosched.o drivers/block/cfq-iosched.c
+In file included from include/asm/proc-fns.h:154,
+                 from include/asm/system.h:94,
+                 from include/asm/bitops.h:22,
+                 from include/linux/bitops.h:77,
+                 from include/linux/kernel.h:15,
+                 from drivers/block/cfq-iosched.c:11:
+include/asm/cpu-single.h:44: warning: type qualifiers ignored on function return type
+In file included from include/linux/kernel.h:17,
+                 from drivers/block/cfq-iosched.c:11:
+include/asm/bug.h:7: warning: type qualifiers ignored on function return type
+  /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/arm-xscale-linux-gnu/bin/arm-xscale-linux-gnu-gcc -Wp,-MD,drivers/block/.loop.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/arm-xscale-linux-gnu/bin/../lib/gcc/arm-xscale-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -Os     -fno-omit-frame-pointer -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mlittle-endian -mabi=apcs-gnu -D__LINUX_ARM_ARCH__=4 -march=armv4 -mtune=strongarm110  -msoft-float -Uarm -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=loop -DKBUILD_MODNAME=loop -c -o drivers/block/loop.o drivers/block/loop.c
+In file included from include/asm/proc-fns.h:154,
+                 from include/asm/system.h:94,
+                 from include/asm/bitops.h:22,
+                 from include/linux/bitops.h:77,
+                 from include/linux/thread_info.h:20,
+                 from include/linux/spinlock.h:12,
+                 from include/linux/capability.h:45,
+                 from include/linux/sched.h:7,
+                 from include/linux/module.h:10,
+                 from drivers/block/loop.c:49:
+include/asm/cpu-single.h:44: warning: type qualifiers ignored on function return type
+In file included from include/linux/kernel.h:17,
+                 from include/linux/spinlock.h:13,
+                 from include/linux/capability.h:45,
+                 from include/linux/sched.h:7,
+                 from include/linux/module.h:10,
+                 from drivers/block/loop.c:49:
+include/asm/bug.h:7: warning: type qualifiers ignored on function return type
+   /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/arm-xscale-linux-gnu/bin/arm-xscale-linux-gnu-ld -EL   -r -o drivers/block/built-in.o drivers/block/elevator.o drivers/block/ll_rw_blk.o drivers/block/ioctl.o drivers/block/genhd.o drivers/block/scsi_ioctl.o drivers/block/noop-iosched.o drivers/block/as-iosched.o drivers/block/deadline-iosched.o drivers/block/cfq-iosched.o drivers/block/loop.o
+make -f scripts/Makefile.build obj=drivers/cdrom
+   rm -f drivers/cdrom/built-in.o; /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/arm-xscale-linux-gnu/bin/arm-xscale-linux-gnu-ar rcs drivers/cdrom/built-in.o
+make -f scripts/Makefile.build obj=drivers/char
+  /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/arm-xscale-linux-gnu/bin/arm-xscale-linux-gnu-gcc -Wp,-MD,drivers/char/.mem.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/arm-xscale-linux-gnu/bin/../lib/gcc/arm-xscale-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -Os     -fno-omit-frame-pointer -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mlittle-endian -mabi=apcs-gnu -D__LINUX_ARM_ARCH__=4 -march=armv4 -mtune=strongarm110  -msoft-float -Uarm -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=mem -DKBUILD_MODNAME=mem -c -o drivers/char/mem.o drivers/char/mem.c
+In file included from include/asm/proc-fns.h:154,
+                 from include/asm/system.h:94,
+                 from include/asm/bitops.h:22,
+                 from include/linux/bitops.h:77,
+                 from include/linux/thread_info.h:20,
+                 from include/linux/spinlock.h:12,
+                 from include/linux/capability.h:45,
+                 from include/linux/sched.h:7,
+                 from include/linux/mm.h:4,
+                 from drivers/char/mem.c:12:
+include/asm/cpu-single.h:44: warning: type qualifiers ignored on function return type
+In file included from include/linux/kernel.h:17,
+                 from include/linux/spinlock.h:13,
+                 from include/linux/capability.h:45,
+                 from include/linux/sched.h:7,
+                 from include/linux/mm.h:4,
+                 from drivers/char/mem.c:12:
+include/asm/bug.h:7: warning: type qualifiers ignored on function return type
+  /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/arm-xscale-linux-gnu/bin/arm-xscale-linux-gnu-gcc -Wp,-MD,drivers/char/.random.o.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.1-20050702-glibc-2.3.2/arm-xscale-linux-gnu/bin/../lib/gcc/arm-xscale-linux-gnu/4.1.0/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -Os     -fno-omit-frame-pointer -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mlittle-endian -mabi=apcs-gnu -D__LINUX_ARM_ARCH__=4 -march=armv4 -mtune=strongarm110  -msoft-float -Uarm -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=random -DKBUILD_MODNAME=random -c -o drivers/char/random.o drivers/char/random.c
+In file included from include/asm/proc-fns.h:154,
+                 from include/asm/system.h:94,
+                 from include/asm/bitops.h:22,
+                 from include/linux/bitops.h:77,
+                 from include/linux/thread_info.h:20,
+                 from include/linux/spinlock.h:12,
+                 from include/linux/capability.h:45,
+                 from include/linux/sched.h:7,
+                 from include/linux/module.h:10,
+                 from drivers/char/random.c:235:
+include/asm/cpu-single.h:44: warning: type qualifiers ignored on function return type
+In file included from include/linux/kernel.h:17,
+                 from include/linux/spinlock.h:13,
+                 from include/linux/capability.h:45,
+                 from include/linux/sched.h:7,
+                 from include/linux/module.h:10,
+                 from drivers/char/random.c:235:
+include/asm/bug.h:7: warning: type qualifiers ignored on function return type
+drivers/char/random.c: In function 'extract_entropy':
+drivers/char/random.c:634: sorry, unimplemented: inlining failed in call to 'add_entropy_words': function not considered for inlining
+drivers/char/random.c:1325: sorry, unimplemented: called from here
+drivers/char/random.c: At top level:
+drivers/char/random.c:2284: internal compiler error: in cgraph_early_inlining, at ipa-inline.c:990
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <URL:http://gcc.gnu.org/bugs.html> for instructions.
+make[2]: *** [drivers/char/random.o] Error 1
+make[1]: *** [drivers/char] Error 2
+make: *** [drivers] Error 2
+
+real	47m24.466s
+user	39m49.260s
+sys	6m25.450s

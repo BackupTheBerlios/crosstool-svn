@@ -1,0 +1,150 @@
+  cd ..; \
+else true; fi
+rm -f needed-list; touch needed-list; \
+for f in atexit calloc memchr memcmp memcpy memmove memset rename strchr strerror strncmp strrchr strstr strtol strtoul tmpnam vfprintf vprintf vfork waitpid bcmp bcopy bzero; do \
+  for g in ./mkstemps.o ; do \
+    case "$g" in \
+      *$f*) echo $g >> needed-list ;; \
+    esac; \
+  done; \
+done
+echo ./regex.o ./cplus-dem.o ./cp-demangle.o ./cp-demint.o ./md5.o ./alloca.o ./argv.o ./choose-temp.o ./concat.o ./dyn-string.o ./fdmatch.o ./fibheap.o ./floatformat.o ./fnmatch.o ./getopt.o ./getopt1.o ./getpwd.o ./getruntime.o ./hashtab.o ./hex.o ./lbasename.o ./lrealpath.o ./make-relative-prefix.o ./make-temp-file.o ./objalloc.o ./obstack.o ./partition.o ./physmem.o ./pex-unix.o ./safe-ctype.o ./sort.o ./spaces.o ./splay-tree.o ./strerror.o ./strsignal.o ./ternary.o ./xatexit.o ./xexit.o ./xmalloc.o ./xmemdup.o ./xstrdup.o ./xstrerror.o > required-list
+make[2]: Entering directory `/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/build-binutils/libiberty/testsuite'
+make[2]: Nothing to be done for `all'.
+make[2]: Leaving directory `/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/build-binutils/libiberty/testsuite'
+make[1]: Leaving directory `/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/build-binutils/libiberty'
+Configuring in intl
+creating cache ./config.cache
+checking for a BSD compatible install... /usr/bin/install -c
+checking how to run the C preprocessor... gcc -E
+checking whether make sets ${MAKE}... yes
+checking for gcc... gcc
+checking whether the C compiler (gcc -g -O2 ) works... yes
+checking whether the C compiler (gcc -g -O2 ) is a cross-compiler... no
+checking whether we are using GNU C... yes
+checking whether gcc accepts -g... yes
+checking for ranlib... ranlib
+checking for POSIXized ISC... no
+checking for ANSI C header files... yes
+checking for working const... yes
+checking for inline... inline
+checking for off_t... yes
+checking for size_t... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for unistd.h... yes
+checking for getpagesize... yes
+checking for working mmap... yes
+checking for argz.h... yes
+checking for limits.h... yes
+checking for locale.h... yes
+checking for nl_types.h... yes
+checking for malloc.h... yes
+checking for string.h... yes
+checking for unistd.h... (cached) yes
+checking for values.h... yes
+checking for sys/param.h... yes
+checking for getcwd... yes
+checking for munmap... yes
+checking for putenv... yes
+checking for setenv... yes
+checking for setlocale... yes
+checking for strchr... yes
+checking for strcasecmp... yes
+checking for __argz_count... yes
+checking for __argz_stringify... yes
+checking for __argz_next... yes
+checking for stpcpy... yes
+checking for LC_MESSAGES... yes
+checking whether NLS is requested... no
+updating cache ./config.cache
+creating ./config.status
+creating Makefile
+creating config.h
+linking /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/intl/libgettext.h to libintl.h
+make[1]: Entering directory `/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/build-binutils/intl'
+make[1]: Nothing to be done for `all'.
+make[1]: Leaving directory `/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/build-binutils/intl'
+make[1]: Entering directory `/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/build-binutils/bfd'
+make  all-recursive
+make[2]: Entering directory `/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/build-binutils/bfd'
+Making all in doc
+make[3]: Entering directory `/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/build-binutils/bfd/doc'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/build-binutils/bfd/doc'
+Making all in po
+make[3]: Entering directory `/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/build-binutils/bfd/po'
+( if test 'x/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/po' != 'x.'; then \
+    posrcprefix='/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/'; \
+  else \
+    posrcprefix="../"; \
+  fi; \
+  rm -f SRC-POTFILES-t SRC-POTFILES \
+    && (sed -e '/^#/d' \
+            -e '/^[ 	]*$/d' \
+	    -e "s@.*@	$posrcprefix& \\\\@" < /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/po/SRC-POTFILES.in \
+	| sed -e '$s/\\$//') > SRC-POTFILES-t \
+    && chmod a-w SRC-POTFILES-t \
+    && mv SRC-POTFILES-t SRC-POTFILES )
+( rm -f BLD-POTFILES-t BLD-POTFILES \
+    && (sed -e '/^#/d' \
+            -e '/^[ 	]*$/d' \
+	    -e "s@.*@	../& \\\\@" < /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/po/BLD-POTFILES.in \
+	| sed -e '$s/\\$//') > BLD-POTFILES-t \
+    && chmod a-w BLD-POTFILES-t \
+    && mv BLD-POTFILES-t BLD-POTFILES )
+cd .. \
+  && CONFIG_FILES=po/Makefile.in:po/Make-in \
+     CONFIG_HEADERS= /bin/sh ./config.status
+creating po/Makefile.in
+make[3]: Leaving directory `/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/build-binutils/bfd/po'
+make[3]: Entering directory `/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/build-binutils/bfd/po'
+make[3]: Nothing to be done for `all'.
+make[3]: Leaving directory `/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/build-binutils/bfd/po'
+make[3]: Entering directory `/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/build-binutils/bfd'
+rm -f bfd-tmp.h
+cp bfd-in3.h bfd-tmp.h
+/bin/sh /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../move-if-change bfd-tmp.h bfd.h
+rm -f bfd-tmp.h
+touch stmp-bfd-h
+/bin/sh ./libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE     -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include  -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl   -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/archive.c
+gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/archive.c -o archive.o
+/bin/sh ./libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE     -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include  -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl   -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c -DDEFAULT_VECTOR=bfd_elf32_powerpc_vec -DSELECT_VECS='&bfd_elf32_powerpc_vec,&rs6000coff_vec,&bfd_elf32_powerpcle_vec,&ppcboot_vec,&bfd_elf32_little_generic_vec,&bfd_elf32_big_generic_vec' -DSELECT_ARCHITECTURES='&bfd_rs6000_arch,&bfd_powerpc_arch' -DHAVE_bfd_elf32_powerpc_vec -DHAVE_rs6000coff_vec -DHAVE_bfd_elf32_powerpcle_vec -DHAVE_ppcboot_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/archures.c
+gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c -DDEFAULT_VECTOR=bfd_elf32_powerpc_vec "-DSELECT_VECS=&bfd_elf32_powerpc_vec,&rs6000coff_vec,&bfd_elf32_powerpcle_vec,&ppcboot_vec,&bfd_elf32_little_generic_vec,&bfd_elf32_big_generic_vec" "-DSELECT_ARCHITECTURES=&bfd_rs6000_arch,&bfd_powerpc_arch" -DHAVE_bfd_elf32_powerpc_vec -DHAVE_rs6000coff_vec -DHAVE_bfd_elf32_powerpcle_vec -DHAVE_ppcboot_vec -DHAVE_bfd_elf32_little_generic_vec -DHAVE_bfd_elf32_big_generic_vec /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/archures.c -o archures.o
+/bin/sh ./libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE     -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include  -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl   -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/bfd.c
+gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/bfd.c -o bfd.o
+/bin/sh ./libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE     -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include  -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl   -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/bfdio.c
+gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/bfdio.c -o bfdio.o
+/bin/sh ./libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE     -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include  -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl   -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/bfdwin.c
+gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/bfdwin.c -o bfdwin.o
+/bin/sh ./libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE     -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include  -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl   -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/cache.c
+gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/cache.c -o cache.o
+/bin/sh ./libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE     -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include  -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl   -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/coffgen.c
+gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/coffgen.c -o coffgen.o
+/bin/sh ./libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE     -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include  -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl   -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/corefile.c
+gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/corefile.c -o corefile.o
+/bin/sh ./libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE     -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include  -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl   -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/format.c
+gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/format.c -o format.o
+/bin/sh ./libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE     -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include  -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl   -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/init.c
+gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/init.c -o init.o
+/bin/sh ./libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE     -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include  -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl   -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/libbfd.c
+gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/libbfd.c -o libbfd.o
+/bin/sh ./libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE     -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include  -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl   -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/opncls.c
+gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/opncls.c -o opncls.o
+/bin/sh ./libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE     -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include  -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl   -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/reloc.c
+gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/reloc.c -o reloc.o
+/bin/sh ./libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE     -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include  -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl   -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/section.c
+gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/section.c -o section.o
+/bin/sh ./libtool --mode=compile gcc -DHAVE_CONFIG_H -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I. -D_GNU_SOURCE     -I. -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../include  -I/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/../intl -I../intl   -W -Wall -Wstrict-prototypes -Wmissing-prototypes -g -O2 -c /home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/binutils-2.15/bfd/syms.c
+libtool: compile: cannot determine name of library object from `'
+make[3]: *** [syms.lo] Error 1
+make[3]: Leaving directory `/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/build-binutils/bfd'
+make[2]: *** [all-recursive] Error 1
+make[2]: Leaving directory `/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/build-binutils/bfd'
+make[1]: *** [all-recursive-am] Error 2
+make[1]: Leaving directory `/home/dank/queue/jobdir.fast0/crosstool-0.37/build/powerpc-405-linux-gnu/gcc-2.95.3-glibc-2.2.5/build-binutils/bfd'
+make: *** [all-bfd] Error 2
+
+real	1m47.947s
+user	1m5.950s
+sys	0m14.800s

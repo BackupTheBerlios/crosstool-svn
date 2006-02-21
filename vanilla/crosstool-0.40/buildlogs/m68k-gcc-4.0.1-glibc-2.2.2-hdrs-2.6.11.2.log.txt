@@ -1,0 +1,150 @@
+*
+* Partition Types
+*
+Advanced partition selection (PARTITION_ADVANCED) [Y/n/?] y
+  Acorn partition support (ACORN_PARTITION) [N/y/?] n
+  Alpha OSF partition support (OSF_PARTITION) [N/y/?] n
+  Amiga partition table support (AMIGA_PARTITION) [Y/n/?] y
+  Atari partition table support (ATARI_PARTITION) [N/y/?] n
+  Macintosh partition map support (MAC_PARTITION) [N/y/?] n
+  PC BIOS (MSDOS partition tables) support (MSDOS_PARTITION) [N/y/?] n
+  Windows Logical Disk Manager (Dynamic Disk) support (LDM_PARTITION) [N/y/?] n
+  SGI partition support (SGI_PARTITION) [N/y/?] n
+  Ultrix partition table support (ULTRIX_PARTITION) [N/y/?] n
+  Sun partition tables support (SUN_PARTITION) [N/y/?] n
+  EFI GUID Partition support (EFI_PARTITION) [N/y/?] n
+*
+* Native Language Support
+*
+Base native language support (NLS) [N/y/?] n
+*
+* Kernel hacking
+*
+Kernel debugging (DEBUG_KERNEL) [Y/n/?] y
+  Magic SysRq key (MAGIC_SYSRQ) [Y/n/?] y
+  Collect scheduler statistics (SCHEDSTATS) [N/y/?] (NEW)   Debug memory allocations (DEBUG_SLAB) [N/y/?] n
+kobject debugging (DEBUG_KOBJECT) [N/y/?] (NEW) Compile the kernel with debug info (DEBUG_INFO) [N/y/?] n
+Debug Filesystem (DEBUG_FS) [N/y/?] (NEW) *
+* Security options
+*
+Enable access key retention support (KEYS) [N/y/?] (NEW) Enable different security models (SECURITY) [N/y/?] n
+*
+* Cryptographic options
+*
+Cryptographic API (CRYPTO) [Y/?] y
+  HMAC support (CRYPTO_HMAC) [Y/?] y
+  Null algorithms (CRYPTO_NULL) [N/y/?] n
+  MD4 digest algorithm (CRYPTO_MD4) [N/y/?] n
+  MD5 digest algorithm (CRYPTO_MD5) [Y/?] y
+  SHA1 digest algorithm (CRYPTO_SHA1) [Y/?] y
+  SHA256 digest algorithm (CRYPTO_SHA256) [N/y/?] n
+  SHA384 and SHA512 digest algorithms (CRYPTO_SHA512) [N/y/?] n
+  Whirlpool digest algorithms (CRYPTO_WP512) [N/y/?] (NEW)   DES and Triple DES EDE cipher algorithms (CRYPTO_DES) [Y/?] y
+  Blowfish cipher algorithm (CRYPTO_BLOWFISH) [N/y/?] n
+  Twofish cipher algorithm (CRYPTO_TWOFISH) [N/y/?] n
+  Serpent cipher algorithm (CRYPTO_SERPENT) [N/y/?] n
+  AES cipher algorithms (CRYPTO_AES) [N/y/?] n
+  CAST5 (CAST-128) cipher algorithm (CRYPTO_CAST5) [N/y/?] n
+  CAST6 (CAST-256) cipher algorithm (CRYPTO_CAST6) [N/y/?] n
+  TEA and XTEA cipher algorithms (CRYPTO_TEA) [N/y/?] n
+  ARC4 cipher algorithm (CRYPTO_ARC4) [N/y/?] n
+  Khazad cipher algorithm (CRYPTO_KHAZAD) [N/y/?] n
+  Anubis cipher algorithm (CRYPTO_ANUBIS) [N/y/?] (NEW)   Deflate compression algorithm (CRYPTO_DEFLATE) [Y/?] y
+  Michael MIC keyed digest algorithm (CRYPTO_MICHAEL_MIC) [N/y/?] n
+  CRC32c CRC algorithm (CRYPTO_CRC32C) [N/y/?] n
+  Testing module (CRYPTO_TEST) [N/y/?] n
+*
+* Hardware crypto devices
+*
+*
+* Library routines
+*
+CRC-CCITT functions (CRC_CCITT) [N/y/?] n
+CRC32 functions (CRC32) [Y/?] y
+CRC32c (Castagnoli, et al) Cyclic Redundancy-Check (LIBCRC32C) [N/y/?] n
++ make ARCH=m68k CROSS_COMPILE=/home/dank/crosstooltest/gcc-4.0.1-glibc-2.2.2/m68k-unknown-linux-gnu/bin/m68k-unknown-linux-gnu- clean
+rm -f vmlinux.gz vmlinux.bz2
++ make V=1 ARCH=m68k CROSS_COMPILE=/home/dank/crosstooltest/gcc-4.0.1-glibc-2.2.2/m68k-unknown-linux-gnu/bin/m68k-unknown-linux-gnu-
+if test ! /home/dank/queue/jobdir.fast7/crosstool-0.38/build/m68k-unknown-linux-gnu/gcc-4.0.1-glibc-2.2.2/linux-2.6.11.3 -ef /home/dank/queue/jobdir.fast7/crosstool-0.38/build/m68k-unknown-linux-gnu/gcc-4.0.1-glibc-2.2.2/linux-2.6.11.3; then \
+/bin/sh /home/dank/queue/jobdir.fast7/crosstool-0.38/build/m68k-unknown-linux-gnu/gcc-4.0.1-glibc-2.2.2/linux-2.6.11.3/scripts/mkmakefile              \
+    /home/dank/queue/jobdir.fast7/crosstool-0.38/build/m68k-unknown-linux-gnu/gcc-4.0.1-glibc-2.2.2/linux-2.6.11.3 /home/dank/queue/jobdir.fast7/crosstool-0.38/build/m68k-unknown-linux-gnu/gcc-4.0.1-glibc-2.2.2/linux-2.6.11.3 2 6         \
+    > /home/dank/queue/jobdir.fast7/crosstool-0.38/build/m68k-unknown-linux-gnu/gcc-4.0.1-glibc-2.2.2/linux-2.6.11.3/Makefile;                                 \
+    echo '  GEN    /home/dank/queue/jobdir.fast7/crosstool-0.38/build/m68k-unknown-linux-gnu/gcc-4.0.1-glibc-2.2.2/linux-2.6.11.3/Makefile';                   \
+fi
+  CHK     include/linux/version.h
+  UPD     include/linux/version.h
+  SYMLINK include/asm -> include/asm-m68k
+if [ ! -d include ]; then mkdir -p include; fi;
+  SPLIT   include/linux/autoconf.h -> include/config/*
+rm -rf .tmp_versions
+mkdir -p .tmp_versions
+make -f scripts/Makefile.build obj=scripts/basic
+  gcc -Wp,-MD,scripts/basic/.fixdep.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer        -o scripts/basic/fixdep scripts/basic/fixdep.c
+  gcc -Wp,-MD,scripts/basic/.split-include.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer        -o scripts/basic/split-include scripts/basic/split-include.c
+  gcc -Wp,-MD,scripts/basic/.docproc.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer        -o scripts/basic/docproc scripts/basic/docproc.c
+make -f scripts/Makefile.build obj=scripts
+  gcc -Wp,-MD,scripts/.kallsyms.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer        -o scripts/kallsyms scripts/kallsyms.c
+  gcc -Wp,-MD,scripts/.pnmtologo.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer        -o scripts/pnmtologo scripts/pnmtologo.c
+  gcc -Wp,-MD,scripts/.conmakehash.d -Wall -Wstrict-prototypes -O2 -fomit-frame-pointer        -o scripts/conmakehash scripts/conmakehash.c
+make -f scripts/Makefile.build obj=arch/m68k/kernel arch/m68k/kernel/asm-offsets.s
+  /home/dank/crosstooltest/gcc-4.0.1-glibc-2.2.2/m68k-unknown-linux-gnu/bin/m68k-unknown-linux-gnu-gcc -Wp,-MD,arch/m68k/kernel/.asm-offsets.s.d -nostdinc -isystem /home/dank/crosstooltest/gcc-4.0.1-glibc-2.2.2/m68k-unknown-linux-gnu/bin/../lib/gcc/m68k-unknown-linux-gnu/4.0.1/include -D__KERNEL__ -Iinclude  -Wall -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -ffreestanding -O2     -fomit-frame-pointer -pipe -fno-strength-reduce -ffixed-a2 -m68040 -Wdeclaration-after-statement -Wno-pointer-sign    -DKBUILD_BASENAME=asm_offsets -DKBUILD_MODNAME=asm_offsets -S -o arch/m68k/kernel/asm-offsets.s arch/m68k/kernel/asm-offsets.c 
+In file included from include/linux/spinlock.h:12,
+                 from include/linux/capability.h:45,
+                 from include/linux/sched.h:7,
+                 from arch/m68k/kernel/asm-offsets.c:12:
+include/linux/thread_info.h:30: error: syntax error before '{' token
+include/linux/thread_info.h:35: error: syntax error before '{' token
+include/linux/thread_info.h: In function 'test_and_set_thread_flag':
+include/linux/thread_info.h:42: error: 'current' undeclared (first use in this function)
+include/linux/thread_info.h:42: error: (Each undeclared identifier is reported only once
+include/linux/thread_info.h:42: error: for each function it appears in.)
+include/linux/thread_info.h: In function 'test_and_clear_thread_flag':
+include/linux/thread_info.h:47: error: 'current' undeclared (first use in this function)
+include/linux/thread_info.h: At top level:
+include/linux/thread_info.h:50: error: syntax error before '{' token
+include/linux/thread_info.h:50: warning: type defaults to 'int' in declaration of '___res'
+include/linux/thread_info.h:50: warning: data definition has no type or storage class
+include/linux/thread_info.h:50: error: syntax error before '}' token
+include/linux/thread_info.h: In function 'set_ti_thread_flag':
+include/linux/thread_info.h:57: error: 'struct thread_info' has no member named 'flags'
+include/linux/thread_info.h:57: error: 'struct thread_info' has no member named 'flags'
+include/linux/thread_info.h: In function 'clear_ti_thread_flag':
+include/linux/thread_info.h:62: error: 'struct thread_info' has no member named 'flags'
+include/linux/thread_info.h:62: error: 'struct thread_info' has no member named 'flags'
+include/linux/thread_info.h: In function 'test_and_set_ti_thread_flag':
+include/linux/thread_info.h:67: error: 'struct thread_info' has no member named 'flags'
+include/linux/thread_info.h:67: error: 'struct thread_info' has no member named 'flags'
+include/linux/thread_info.h: In function 'test_and_clear_ti_thread_flag':
+include/linux/thread_info.h:72: error: 'struct thread_info' has no member named 'flags'
+include/linux/thread_info.h:72: error: 'struct thread_info' has no member named 'flags'
+include/linux/thread_info.h: In function 'test_ti_thread_flag':
+include/linux/thread_info.h:77: error: 'struct thread_info' has no member named 'flags'
+In file included from include/linux/spinlock.h:12,
+                 from include/linux/capability.h:45,
+                 from include/linux/sched.h:7,
+                 from arch/m68k/kernel/asm-offsets.c:12:
+include/linux/thread_info.h:80:41: error: macro "set_need_resched" passed 1 arguments, but takes just 0
+include/linux/thread_info.h: At top level:
+include/linux/thread_info.h:81: error: syntax error before '{' token
+include/linux/thread_info.h:85:43: error: macro "clear_need_resched" passed 1 arguments, but takes just 0
+include/linux/thread_info.h:86: error: syntax error before '{' token
+In file included from arch/m68k/kernel/asm-offsets.c:12:
+include/linux/sched.h:1055: error: syntax error before '{' token
+include/linux/sched.h:1060: error: syntax error before '{' token
+include/linux/sched.h:1065: error: syntax error before '{' token
+include/linux/sched.h:1065: warning: type defaults to 'int' in declaration of '___res'
+include/linux/sched.h:1065: warning: data definition has no type or storage class
+include/linux/sched.h:1065: error: syntax error before '}' token
+include/linux/sched.h:1065: warning: type defaults to 'int' in declaration of '__res'
+include/linux/sched.h:1065: warning: data definition has no type or storage class
+include/linux/sched.h:1065: error: syntax error before '}' token
+include/linux/sched.h:1075: error: syntax error before '{' token
+include/linux/sched.h:1075: warning: type defaults to 'int' in declaration of '___res'
+include/linux/sched.h:1075: warning: data definition has no type or storage class
+include/linux/sched.h:1075: error: syntax error before '}' token
+make[1]: *** [arch/m68k/kernel/asm-offsets.s] Error 1
+make: *** [arch/m68k/kernel/asm-offsets.s] Error 2
+
+real	25m17.385s
+user	19m55.880s
+sys	4m35.540s

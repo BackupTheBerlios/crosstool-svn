@@ -1,0 +1,150 @@
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+.././scripts/mkinstalldirs /home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/misc
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+In file included from ../include/libc-symbols.h:54,
+                 from <command line>:1:
+/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/config.h:3:3: #error "glibc cannot be compiled without optimization"
+rm -f /home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/misc/syscall-list.d-t
+{ \
+ echo '/* Generated at libc build time from kernel syscall list.  */';\
+ echo ''; \
+ echo '#ifndef _SYSCALL_H'; \
+ echo '# error "Never use <bits/syscall.h> directly; include <sys/syscall.h> instead."'; \
+ echo '#endif'; \
+ echo ''; \
+ SUNPRO_DEPENDENCIES='/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/misc/syscall-list.d-t /home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/misc/syscall-list.d' \
+ gcc -E -x c -nostdinc -isystem /usr/local/gcc323/lib/gcc-lib/i686-pc-linux-gnu/3.2.3/include -isystem /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include ../sysdeps/unix/sysv/linux/sys/syscall.h -D_LIBC -dM | \
+ sed -n 's@^#define __NR_\([^ ]*\) .*$@#define SYS_\1 __NR_\1@p'; \
+} > /home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/misc/syscall-list.h.new
+mv -f /home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/misc/syscall-list.h.new /home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/misc/syscall-list.h
+sed < /home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/misc/syscall-list.d-t > /home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/misc/syscall-list.d-t2 \
+    -e 's,/home/dank/queue/jobdir\.fast6/crosstool-0\.37/build/x86_64-unknown-linux-gnu/gcc-3\.4\.4-glibc-2\.2\.5/build-glibc-headers/misc/syscall-list\.d,$(objpfx)syscall-list.h $(objpfx)syscall-list.d,'
+rm -f /home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/misc/syscall-list.d-t
+mv -f /home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/misc/syscall-list.d-t2 /home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/build-glibc-headers/misc/syscall-list.d
+make[2]: Leaving directory `/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/glibc-2.2.5/misc'
+make[2]: Entering directory `/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/glibc-2.2.5/misc'
+/usr/bin/install -c -m 644 sys/uio.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/sys/uio.h
+/usr/bin/install -c -m 644 ../sysdeps/unix/sysv/linux/bits/uio.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/bits/uio.h
+/usr/bin/install -c -m 644 sys/ioctl.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/sys/ioctl.h
+/usr/bin/install -c -m 644 ../sysdeps/unix/sysv/linux/bits/ioctls.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/bits/ioctls.h
+/usr/bin/install -c -m 644 ../sysdeps/unix/sysv/linux/bits/ioctl-types.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/bits/ioctl-types.h
+/usr/bin/install -c -m 644 ../sysdeps/unix/sysv/linux/sys/ptrace.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/sys/ptrace.h
+/usr/bin/install -c -m 644 sys/file.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/sys/file.h
+/usr/bin/install -c -m 644 sys/dir.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/sys/dir.h
+/usr/bin/install -c -m 644 sys/cdefs.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/sys/cdefs.h
+/usr/bin/install -c -m 644 ar.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/ar.h
+/usr/bin/install -c -m 644 ../sysdeps/unix/sysv/linux/a.out.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/a.out.h
+/usr/bin/install -c -m 644 libgen.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/libgen.h
+/usr/bin/install -c -m 644 stab.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/stab.h
+/usr/bin/install -c -m 644 bits/stab.def /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/bits/stab.def
+/usr/bin/install -c -m 644 sgtty.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/sgtty.h
+/usr/bin/install -c -m 644 ttyent.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/ttyent.h
+/usr/bin/install -c -m 644 syslog.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/syslog.h
+/usr/bin/install -c -m 644 sys/syslog.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/sys/syslog.h
+/usr/bin/install -c -m 644 ../sysdeps/unix/sysv/linux/paths.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/paths.h
+/usr/bin/install -c -m 644 ../sysdeps/unix/sysv/linux/sys/reboot.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/sys/reboot.h
+/usr/bin/install -c -m 644 sys/mman.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/sys/mman.h
+/usr/bin/install -c -m 644 ../sysdeps/unix/sysv/linux/sys/param.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/sys/param.h
+/usr/bin/install -c -m 644 fstab.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/fstab.h
+/usr/bin/install -c -m 644 mntent.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/mntent.h
+/usr/bin/install -c -m 644 search.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/search.h
+/usr/bin/install -c -m 644 err.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/err.h
+/usr/bin/install -c -m 644 error.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/error.h
+/usr/bin/install -c -m 644 sys/queue.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/sys/queue.h
+/usr/bin/install -c -m 644 sysexits.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/sysexits.h
+/usr/bin/install -c -m 644 syscall.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/syscall.h
+/usr/bin/install -c -m 644 ../sysdeps/unix/sysv/linux/sys/syscall.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/sys/syscall.h
+/usr/bin/install -c -m 644 ../sysdeps/unix/sysv/linux/sys/swap.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/sys/swap.h
+/usr/bin/install -c -m 644 sys/select.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/sys/select.h
+/usr/bin/install -c -m 644 ustat.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/ustat.h
+/usr/bin/install -c -m 644 sys/ustat.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/sys/ustat.h
+/usr/bin/install -c -m 644 ../sysdeps/unix/sysv/linux/bits/ustat.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/bits/ustat.h
+/usr/bin/install -c -m 644 ../sysdeps/unix/sysv/linux/sys/sysinfo.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/sys/sysinfo.h
+/usr/bin/install -c -m 644 regexp.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/regexp.h
+/usr/bin/install -c -m 644 ../sysdeps/generic/bits/select.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/bits/select.h
+/usr/bin/install -c -m 644 ../sysdeps/unix/sysv/linux/x86_64/bits/mman.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/bits/mman.h
+/usr/bin/install -c -m 644 ../sysdeps/unix/sysv/linux/x86_64/sys/perm.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/sys/perm.h
+/usr/bin/install -c -m 644 ../sysdeps/unix/sysv/linux/x86_64/sys/reg.h /home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/sys/reg.h
+make[2]: *** No rule to make target `sys/debugreg.h', needed by `/home/dank/crosstooltest/gcc-3.4.4-glibc-2.2.5/x86_64-unknown-linux-gnu/x86_64-unknown-linux-gnu/sys-root/usr/include/sys/debugreg.h'.  Stop.
+make[2]: Leaving directory `/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/glibc-2.2.5/misc'
+make[1]: *** [misc/install-headers] Error 2
+make[1]: Leaving directory `/home/dank/queue/jobdir.fast6/crosstool-0.37/build/x86_64-unknown-linux-gnu/gcc-3.4.4-glibc-2.2.5/glibc-2.2.5'
+make: *** [install-headers] Error 2
+
+real	6m4.105s
+user	4m22.790s
+sys	1m11.970s

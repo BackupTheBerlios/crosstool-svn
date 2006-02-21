@@ -1,0 +1,150 @@
+rm -f cpp0
+ln cccp cpp0
+MAKE="make"; srcdir=`cd /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/fixinc; pwd` ; \
+export MAKE srcdir ; \
+cd ./fixinc; /bin/sh ${srcdir}/mkfixinc.sh powerpc-860-linux-gnu
+constructing ../fixinc.sh for powerpc-860-linux-gnu
+rm -rf include; mkdir include
+TARGET_MACHINE=powerpc-860-linux-gnu; srcdir=`cd /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc; pwd`; \
+INSTALL_ASSERT_H=; SHELL=/bin/sh ;\
+export TARGET_MACHINE srcdir INSTALL_ASSERT_H SHELL ; \
+/bin/sh ./fixinc.sh `pwd`/include /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/powerpc-860-linux-gnu/sys-include 
+rm -f include/syslimits.h
+if [ -f include/limits.h ]; then \
+  mv include/limits.h include/syslimits.h; \
+else \
+  cp /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/gsyslimits.h include/syslimits.h; \
+fi
+chmod a+r include/syslimits.h
+if [ "/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/powerpc-860-linux-gnu/sys-include" = "/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/powerpc-860-linux-gnu/sys-include" ] \
+   && [ -d /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/powerpc-860-linux-gnu/sys-include ]; then \
+  if [ -d /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/lib ] ; then true ; else mkdir /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/lib ; fi; \
+  if [ -d /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/lib/gcc-lib ] ; then true ; else mkdir /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/lib/gcc-lib; fi; \
+  if [ -d /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/lib/gcc-lib/powerpc-860-linux-gnu ] ; then true ; else mkdir /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/lib/gcc-lib/powerpc-860-linux-gnu ; fi; \
+  if [ -d /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/lib/gcc-lib/powerpc-860-linux-gnu/2.95.3 ] ; then true ; else mkdir /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/lib/gcc-lib/powerpc-860-linux-gnu/2.95.3 ; fi; \
+else true; fi
+touch stmp-fixinc
+if [ -f /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/powerpc-860-linux-gnu/sys-include/limits.h ] ; then \
+  cat /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/limitx.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/glimits.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/limity.h > tmp-xlimits.h; \
+else \
+  cat /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/glimits.h > tmp-xlimits.h; \
+fi
+mv tmp-xlimits.h xlimits.h
+for file in .. /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/stdarg.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/stddef.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/varargs.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/va-alpha.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/va-h8300.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/va-i860.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/va-i960.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/va-mips.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/va-m88k.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/va-mn10200.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/va-mn10300.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/va-pa.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/va-pyr.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/va-sparc.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/va-clipper.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/va-spur.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/va-m32r.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/va-sh.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/va-v850.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/va-arc.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/iso646.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/va-ppc.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/va-c4x.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/ppc-asm.h  /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/proto.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/ginclude/stdbool.h; do \
+  if [ X$file != X.. ]; then \
+    realfile=`echo $file | sed -e 's|.*/\([^/]*\)$|\1|'`; \
+    touch include/$realfile; \
+    rm -f include/$realfile; \
+    cp $file include; \
+    chmod a+r include/$realfile; \
+  fi; \
+done
+rm -f include/limits.h
+cp xlimits.h include/limits.h
+chmod a+r include/limits.h
+rm -f include/float.h
+if [ xfloat-i64.h != xMakefile.in ]; then \
+  cp /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/config/float-i64.h include/float.h && \
+  chmod a+r include/float.h; \
+else :; fi
+rm -f include/README
+cp /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/README-fixinc include/README
+chmod a+r include/README
+touch stmp-int-hdrs
+rm -f SYSCALLS.c tmp-SYSCALLS.s
+cat /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/sys-types.h /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/sys-protos.h > SYSCALLS.c
+/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/build-gcc-core/gcc/xgcc -B/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/build-gcc-core/gcc/ -B/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/powerpc-860-linux-gnu/bin/ -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/powerpc-860-linux-gnu/include -DCROSS_COMPILE -DIN_GCC -DHAIFA    -g -O2 -I./include     -I. -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/config -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/../include \
+  -aux-info SYSCALLS.c.X -S -o tmp-SYSCALLS.s SYSCALLS.c
+rm -f SYSCALLS.c tmp-SYSCALLS.s
+gcc -c -DCROSS_COMPILE -DIN_GCC -DHAIFA    -g -O2  -DHAVE_CONFIG_H    -I. -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/config -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/../include /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/gcov.c
+gcc -DCROSS_COMPILE -DIN_GCC -DHAIFA    -g -O2  -DHAVE_CONFIG_H  gcov.o intl.o obstack.o        ../libiberty/libiberty.a -o gcov
+gcc -DCROSS_COMPILE -DIN_GCC -DHAIFA    -g -O2  -DHAVE_CONFIG_H    -I. -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/config -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/../include  \
+-DTARGET_MACHINE=\"powerpc-860-linux-gnu\"  \
+-c `echo /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/collect2.c | sed 's,^\./,,'`
+gcc -c -DCROSS_COMPILE -DIN_GCC -DHAIFA    -g -O2  -DHAVE_CONFIG_H    -I. -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/config -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/../include /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/tlink.c
+echo "int xxy_us_dummy;" >tmp-dum.c
+/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/build-gcc-core/gcc/xgcc -B/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/build-gcc-core/gcc/ -B/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/powerpc-860-linux-gnu/bin/ -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/powerpc-860-linux-gnu/include -S tmp-dum.c
+echo '/*WARNING: This file is automatically generated!*/' >tmp-under.c
+if grep _xxy_us_dummy tmp-dum.s > /dev/null ; then \
+  echo "int prepends_underscore = 1;" >>tmp-under.c; \
+else \
+  echo "int prepends_underscore = 0;" >>tmp-under.c; \
+fi
+/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/move-if-change tmp-under.c underscore.c
+rm -f tmp-dum.c tmp-dum.s
+touch s-under
+gcc -c -DCROSS_COMPILE -DIN_GCC -DHAIFA    -g -O2  -DHAVE_CONFIG_H    -I. -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/config -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/../include underscore.c
+rm -f collect2
+gcc -DCROSS_COMPILE -DIN_GCC -DHAIFA    -g -O2  -DHAVE_CONFIG_H  -o collect2 collect2.o tlink.o hash.o intl.o underscore.o version.o  obstack.o        ../libiberty/libiberty.a
+../libiberty/libiberty.a(choose-temp.o)(.text+0x11c): In function `choose_temp_base':
+/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/libiberty/choose-temp.c:138: warning: the use of `mktemp' is dangerous, better use `mkstemp'
+cp xgcc gcc-cross
+/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/build-gcc-core/gcc/xgcc -B/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/build-gcc-core/gcc/ -B/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/powerpc-860-linux-gnu/bin/ -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/powerpc-860-linux-gnu/include -dumpspecs > tmp-specs
+mv tmp-specs specs
+touch stmp-headers
+if [ -f libgcc2.ready ] ; then \
+	true; \
+else \
+	touch libgcc2.ready; \
+fi
+echo '#define FLOAT' > fp-bit.c
+cat /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/config/fp-bit.c >> fp-bit.c
+cat /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/config/fp-bit.c > dp-bit.c
+cat /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/config/rs6000/eabi.asm > eabi.S
+cat /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/config/rs6000/eabi-ctors.c > eabi-ctors.c
+cat /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/config/rs6000/tramp.asm > tramp.S
+for i in `/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/build-gcc-core/gcc/xgcc -B/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/build-gcc-core/gcc/ -B/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/powerpc-860-linux-gnu/bin/ -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/powerpc-860-linux-gnu/include --print-multi-lib`; do \
+  dir=`echo $i | sed -e 's/;.*$//'`; \
+  flags=`echo $i | sed -e 's/^[^;]*;//' -e 's/@/ -/g'`; \
+  make GCC_FOR_TARGET="/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/build-gcc-core/gcc/xgcc -B/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/build-gcc-core/gcc/ -B/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/powerpc-860-linux-gnu/bin/ -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/powerpc-860-linux-gnu/include" \
+    AR_FOR_TARGET="powerpc-860-linux-gnu-ar" \
+    AR_FLAGS_FOR_TARGET="rc" \
+    CC="gcc" CFLAGS="-g -O2" \
+    RANLIB_FOR_TARGET="powerpc-860-linux-gnu-ranlib" \
+    RANLIB_TEST_FOR_TARGET="[ -f powerpc-860-linux-gnu-ranlib ] || ( [ "i686-host_pc-linux-gnu" = "powerpc-860-linux-gnu" ] && [ -f /usr/bin/ranlib -o -f /bin/ranlib ] )" \
+    LANGUAGES="c proto gcov " \
+    HOST_PREFIX="" HOST_PREFIX_1="loser-" \
+    LIBGCC2_CFLAGS="-O2  -DCROSS_COMPILE -DIN_GCC -DHAIFA    -g -O2 -I./include  -fPIC -g1  -DIN_LIBGCC2 -D__GCC_FLOAT_NOT_NEEDED -Dinhibit_libc  ${flags}" \
+    MULTILIB_CFLAGS="${flags}" \
+    LIBGCC1="" LIBGCC2="libgcc2.a" \
+    dir="${dir}" stmp-multilib-sub; \
+  if [ $? -eq 0 ] ; then true; else exit 1; fi; \
+done
+make[2]: Entering directory `/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/build-gcc-core/gcc'
+rm -f libgcc2.a
+if [ -d . ]; then \
+  cd .; \
+  rm -f libgcc.a ecrti.o ecrtn.o scrt0.o scrti.o scrtn.o; \
+else true; \
+fi
+make GCC_FOR_TARGET="/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/build-gcc-core/gcc/xgcc -B/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/build-gcc-core/gcc/ -B/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/powerpc-860-linux-gnu/bin/ -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/powerpc-860-linux-gnu/include" \
+  AR_FOR_TARGET="powerpc-860-linux-gnu-ar" \
+  AR_FLAGS_FOR_TARGET="rc" \
+  CC="gcc" CFLAGS="-g -O2" \
+  HOST_PREFIX="" HOST_PREFIX_1="loser-" \
+  LANGUAGES="c proto gcov " \
+  LIBGCC2_CFLAGS="-O2  -DCROSS_COMPILE -DIN_GCC -DHAIFA    -g -O2 -I./include  -fPIC -g1  -DIN_LIBGCC2 -D__GCC_FLOAT_NOT_NEEDED -Dinhibit_libc   -mstrict-align" libgcc2.a
+make[3]: Entering directory `/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/build-gcc-core/gcc'
+rm -f tmplibgcc2.a
+for name in _muldi3 _divdi3 _moddi3 _udivdi3 _umoddi3 _negdi2 _lshrdi3 _ashldi3 _ashrdi3 _ffsdi2 _udiv_w_sdiv _udivmoddi4 _cmpdi2 _ucmpdi2 _floatdidf _floatdisf _fixunsdfsi _fixunssfsi _fixunsdfdi _fixdfdi _fixunssfdi _fixsfdi _fixxfdi _fixunsxfdi _floatdixf _fixunsxfsi _fixtfdi _fixunstfdi _floatditf __gcc_bcmp _varargs __dummy _eprintf _bb _shtab _clear_cache _trampoline __main _exit _ctors _pure; \
+do \
+  echo ${name}; \
+  /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/build-gcc-core/gcc/xgcc -B/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/build-gcc-core/gcc/ -B/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/powerpc-860-linux-gnu/bin/ -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-core-prefix/powerpc-860-linux-gnu/include -O2  -DCROSS_COMPILE -DIN_GCC -DHAIFA    -g -O2 -I./include  -fPIC -g1  -DIN_LIBGCC2 -D__GCC_FLOAT_NOT_NEEDED -Dinhibit_libc   -mstrict-align -I. -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/config -I/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/../include -c -DL${name} \
+       /home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/gcc-2.95.3/gcc/libgcc2.c -o ${name}.o; \
+  if [ $? -eq 0 ] ; then true; else exit 1; fi; \
+  powerpc-860-linux-gnu-ar rc tmplibgcc2.a ${name}.o; \
+  rm -f ${name}.o; \
+done
+_muldi3
+as: unrecognized option `-mppc'
+make[3]: *** [libgcc2.a] Error 1
+make[3]: Leaving directory `/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/build-gcc-core/gcc'
+make[2]: *** [stmp-multilib-sub] Error 2
+make[2]: Leaving directory `/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/build-gcc-core/gcc'
+make[1]: *** [stmp-multilib] Error 1
+make[1]: Leaving directory `/home/dank/queue/jobdir.fast3/crosstool-0.35/build/powerpc-860-linux-gnu/gcc-4.0.0-glibc-2.2.2/build-gcc-core/gcc'
+make: *** [all-gcc] Error 2
+
+real	7m57.474s
+user	5m43.480s
+sys	1m26.450s
