@@ -7,25 +7,27 @@
 #
 # Requires that you have already used ssh-keygen, ssh-agent, ssh-add, etc. 
 # to set up a no-prompt way of using ssh to run remote commands
-# Creates $HOME/crosstooltest and $HOME/downloads on all machines
+# Creates $HOME/crosstooltest and $HOME/tarballs on all machines
 # Accumulates results in directory 'jobdir' on current machine
 # Run regtest-report.sh afterwards to generate nice HTML matrix of build results
 
 set -x
 
-# Run this command as 'nohup ssh-agent sh crosstool-0.38/regtest-run.sh'
+# Run this command as 'nohup ssh-agent sh crosstool-0.40/regtest-run.sh'
 #ssh-add
 
 #rm -rf jobdir
 mkdir -p jobdir
 
 # Which version of crosstool to test
-CROSSTOOL=crosstool-0.38
+CROSSTOOL=crosstool-0.40
 
 # Edit this line to specify the hosts to run the script on
 #ALLNODES="k8 fast fast2"
+ROLE=produser
 
-WORKDIR=`pwd`
+
+WORKDIR=/home/produser/crosstool-regtest
 
 # The ones tested by crosstool-0.31
 TOOLS="\
@@ -56,15 +58,16 @@ gcc-3.3.6-glibc-2.2.2-hdrs-2.6.11.2 \
 gcc-3.3.6-glibc-2.2.5 \
 gcc-3.3.6-glibc-2.3.2-hdrs-2.6.11.2 \
 gcc-3.3.6-glibc-2.3.5 \
-gcc-3.4.4-glibc-2.2.2-hdrs-2.6.11.2 \
-gcc-3.4.4-glibc-2.2.5 \
-gcc-3.4.4-glibc-2.3.2-hdrs-2.6.11.2 \
-gcc-3.4.4-glibc-2.3.5-hdrs-2.6.11.2 \
-gcc-4.0.1-glibc-2.2.2-hdrs-2.6.11.2 \
-gcc-4.0.1-glibc-2.3.2-hdrs-2.6.11.2 \
-gcc-4.0.1-glibc-2.3.5-hdrs-2.6.11.2 \
-gcc-4.1-20050716-glibc-2.2.2-hdrs-2.6.11.2 \
-gcc-4.1-20050716-glibc-2.3.2-hdrs-2.6.11.2 \
+gcc-3.4.5-glibc-2.2.2-hdrs-2.6.11.2 \
+gcc-3.4.5-glibc-2.2.5 \
+gcc-3.4.5-glibc-2.3.2-hdrs-2.6.11.2 \
+gcc-3.4.5-glibc-2.3.5-hdrs-2.6.11.2 \
+gcc-3.4.5-glibc-2.3.6-hdrs-2.6.11.2 \
+gcc-4.0.2-glibc-2.2.2-hdrs-2.6.11.2 \
+gcc-4.0.2-glibc-2.3.2-hdrs-2.6.11.2 \
+gcc-4.0.2-glibc-2.3.5-hdrs-2.6.11.2 \
+gcc-4.1.0-20060219-glibc-2.2.2-hdrs-2.6.11.2 \
+gcc-4.1.0-20060219-glibc-2.3.2-hdrs-2.6.11.2 \
 "
 
 # Edit this line to specify which toolchain combos to build
@@ -117,7 +120,9 @@ for cpu in $CPUS; do
        cat > jobdir/$cpu-$toolcombo.sh <<_EOF_
 set -x
 cd $CROSSTOOL
-TARBALLS_DIR=$HOME/downloads
+# FIXME: Remove this next line
+export NO_DOWNLOAD=1
+TARBALLS_DIR=$HOME/tarballs
 export TARBALLS_DIR
 RESULT_TOP=$HOME/crosstooltest
 export RESULT_TOP
@@ -160,9 +165,9 @@ runjobs() {
     # glibc hates building in directories with @ in their name
     NODEDIR=`echo $WORKDIR/jobdir.$node | sed 's/@/_/g'`
 
-    ssh -n -x -T $node "rm -rf $NODEDIR; mkdir -p $NODEDIR"
-    scp $tarball ${node}:$NODEDIR
-    ssh -n -x -T $node "cd $NODEDIR; tar -xzvf $tarball"
+    ssh -n -x -T $ROLE@$node "rm -rf $NODEDIR; mkdir -p $NODEDIR"
+    scp $tarball $ROLE@${node}:$NODEDIR
+    ssh -n -x -T $ROLE@$node "cd $NODEDIR; tar -xzvf $tarball"
     cd jobdir
     # can't do ls *.sh; that fails if too many processes do it at same time
     # because a file might be moved away between wildcard expansion and stat
@@ -180,8 +185,8 @@ runjobs() {
 
 	    echo Starting job $job on node $node
 	    echo Starting job $job on node $node > $base.log
-	    scp $job.$node.running ${node}:$NODEDIR
-	    ssh -n -x -T $node "cd $NODEDIR; sh $job.$node.running" >> $base.log 2>&1 || true
+	    scp $job.$node.running $ROLE@${node}:$NODEDIR
+	    ssh -n -x -T $ROLE@$node "cd $NODEDIR; sh $job.$node.running" >> $base.log 2>&1 || true
 
 	    # Extract last few lines of log for posterity
             tail -150 $base.log > $log

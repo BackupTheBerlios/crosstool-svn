@@ -1,3 +1,5 @@
+See http://gcc.gnu.org/PR22541
+
 From: Dan Kegel
 
 When building gcc-3.4.3 or gcc-4.0.0 as a cross into a clean $PREFIX

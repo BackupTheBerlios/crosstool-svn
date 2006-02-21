@@ -32,7 +32,8 @@ if test "${CYGWIN_DIR}" = ""; then
   test -z "${GLIBC_DIR}"        && abort "Please set GLIBC_DIR to the bare filename of the glibc tarball or directory"
   test -z "${LINUX_SANITIZED_HEADER_DIR}" && echo "Not downloading linux-libc-headers. Set LINUX_SANITIZED_HEADER_DIR to do so"
   test -z "${LINUX_DIR}"        && echo "Not downloading kernel sources. Set LINUX_DIR if you want to do so"
-  # And one is derived.
+  # And one is derived if not set explicitly.
+  test -z "${GLIBCTHREADS_FILENAME}" &&
   GLIBCTHREADS_FILENAME=`echo $GLIBC_DIR | sed 's/glibc-/glibc-linuxthreads-/'`
 fi
 
@@ -47,6 +48,10 @@ if test -z "$QUIET_EXTRACTIONS"; then VERBOSE=-v;else VERBOSE=; fi
 
 # Pattern in a patch log to indicate failure
 PATCHFAILMSGS="^No file to patch.  Skipping patch.|^Hunk .* FAILED at"
+
+# Get a well-defined sort order so patches always in same order
+LANG=C
+export LANG
 
 # Download the given file to $TARBALLS_DIR
 downloadFile()
@@ -65,6 +70,7 @@ downloadFile()
 	case $1 in
 
 	*glibc-200*gz)
+		wget --tries=5 -P ${TARBALLS_DIR} -c $1 || wget --tries=5 --passive-ftp -P ${TARBALLS_DIR} -c $1 || \
 		(cd $TARBALLS_DIR; sh $TOP_DIR/glibc-get.sh $1; )
 		;; 
 	*)
@@ -195,15 +201,21 @@ fi
 
 # No glibc for cygwin.
 if test "${CYGWIN_DIR}" = ""; then
-  getUnpackAndPatch \
-       ftp://ftp.gnu.org/pub/gnu/glibc/$GLIBC_DIR.tar.bz2 \
-       ftp://ftp.gnu.org/pub/gnu/glibc/$GLIBC_DIR.tar.gz \
-       ftp://gcc.gnu.org/pub/glibc/releases/$GLIBC_DIR.tar.bz2 \
-       ftp://gcc.gnu.org/pub/glibc/releases/$GLIBC_DIR.tar.gz 
+   case $GLIBC_DIR in
+      glibc-200*) 
+  	  getUnpackAndPatch \
+		ftp://gcc.gnu.org/pub/glibc/snapshots/$GLIBC_DIR.tar.bz2 \
+		ftp://gcc.gnu.org/pub/glibc/snapshots/$GLIBC_DIR.tar.gz ;;
+      *)  
+  	  getUnpackAndPatch \
+		ftp://ftp.gnu.org/pub/gnu/glibc/$GLIBC_DIR.tar.bz2 \
+		ftp://ftp.gnu.org/pub/gnu/glibc/$GLIBC_DIR.tar.gz \
+		ftp://gcc.gnu.org/pub/glibc/releases/$GLIBC_DIR.tar.bz2 \
+		ftp://gcc.gnu.org/pub/glibc/releases/$GLIBC_DIR.tar.gz ;;
+   esac
 else
   getUnpackAndPatch ${CYGWIN_URL}/${CYGWIN_DIR}-src.tar.bz2
 fi
-
 if test x"$BINUTILS_URL" = x; then
    case $BINUTILS_DIR in
       binutils-2.*.9*.0*) 
@@ -223,10 +235,10 @@ for gcc in $GCC_DIR $GCC_CORE_DIR; do
    #   getUnpackAndPatch ftp://ftp.gnu.org/pub/gnu/gcc/releases/$gcc/$gcc.tar.bz2 ;;
    gcc-3.3.5)
       getUnpackAndPatch ftp://gcc.gnu.org/pub/gcc/releases/$gcc/$gcc.tar.bz2 ;;
-   gcc-4.0.[012345]-200*)
+   gcc-4.[01234].[012345]-200*)
       dir=`echo $gcc | sed s/gcc-/prerelease-/`
       getUnpackAndPatch ftp://gcc.gnu.org/pub/gcc/$dir/$gcc.tar.bz2 ftp://gcc.gnu.org/pub/gcc/$dir/$gcc.tar.gz ;;
-   gcc-3.[345]-200*|gcc-4.0-200*|gcc-4.1-2005*)
+   gcc-3.[3456]-200*|gcc-4.0-200*|gcc-4.1-200*)
       dir=`echo $gcc | sed 's/gcc-//'`
       getUnpackAndPatch ftp://gcc.gnu.org/pub/gcc/snapshots/$dir/$gcc.tar.bz2 ;;
    *)
@@ -246,7 +258,9 @@ if test "${CYGWIN_DIR}" = ""; then
     *) abort "unknown version $LINUX_DIR of linux, expected 2.4 or 2.6 in name?" ;;
   esac
   # Fetch linux-libc-headers, if requested
-  test -n "${LINUX_SANITIZED_HEADER_DIR}" && getUnpackAndPatch    http://ep09.pld-linux.org/~mmazur/linux-libc-headers/${LINUX_SANITIZED_HEADER_DIR}.tar.bz2
+  test -n "${LINUX_SANITIZED_HEADER_DIR}" && getUnpackAndPatch \
+	http://ep09.pld-linux.org/~mmazur/linux-libc-headers/${LINUX_SANITIZED_HEADER_DIR}.tar.bz2 \
+	ftp://ftp.lfs-matrix.net/pub/linux-libc-headers/${LINUX_SANITIZED_HEADER_DIR}.tar.bz2
   # Glibc addons must come after glibc
   getUnpackAndPatch     \
        ftp://ftp.gnu.org/pub/gnu/glibc/$GLIBCTHREADS_FILENAME.tar.bz2 \

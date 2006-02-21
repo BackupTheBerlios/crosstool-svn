@@ -21,13 +21,16 @@ done | sed 's/\.dat\.txt//' > all.dats.txt
 # Generate fancy index.html report
 
 # Figure out which tool combinations were used
-sed 's/NAME=[-_a-zA-Z0-9\.]*//;s/TARGET=[_a-z0-9\-]*//;s/toolchain=[A-Z]*//;s/kernel=[A-Z]*//;' < all.dats.txt | sort -u | tr '\011' ':' | grep ':.*:.*:' | sed 's/::*/:/g' | sort -u | grep GCC | grep GLIBC > all-tools.tmp
+sed 's/NAME=[-_a-zA-Z0-9\.]*//;s/TARGET=[_a-z0-9\-]*//;s/toolchain=[A-Z]*//;s/kernel=[A-Z]*//;s/gdb=[A-Z]*//;s/gdbserver=[A-Z]*//' < all.dats.txt | sort -u | tr '\011' ':' | grep ':.*:.*:' | sed 's/::*/:/g' | sort -u | grep GCC | grep GLIBC > all-tools.tmp
 ALL_CPUS=`cat all.dats.txt | tr '\011' '\012' | grep TARGET= | sed 's/TARGET=//;s/-unknown//;s/-linux-gnu//' | sort -u`
 
 OUT=index.html
 cat  > $OUT <<_EOF_
 <html>
 <head>
+<style type="text/css">
+a:visited { color: black; } 
+</style>
 <title>Crosstool build results</title>
 </head>
 <body>
@@ -70,6 +73,7 @@ for cpu in $ALL_CPUS; do
    arm-9tdmi) cpu=arm9tdmi;;
    armv5b-softfloat-linux) cpu=armv5b-softfloat;;
    powerpc64) cpu=powerpc-970;;
+   i686-piii) cpu=pentium3;;       # hrm, that seems off somehow
    esac
    echo '<tr><th>'$cpu'</th>'
    for tools in `cat all-tools.tmp`; do
@@ -130,4 +134,4 @@ echo '</tr>' >> $OUT
 echo '</table>' >> $OUT
 echo '</body></html>' >> $OUT
 
-rm -f *.tmp
+#rm -f *.tmp

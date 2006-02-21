@@ -1,7 +1,59 @@
 Note: a description of why each patch is needed is embedded
 *inside* the patch file at the top, so read the patch file
 for more info.
- 
+
+0.40:
+    crosstool.sh:
+    * check for flex and bison (some distros don't install them by default)
+    * undo bits/syscall.h gcj-4.0.0 change from Tim Hayman since 
+      it breaks arm, see http://sourceware.org/ml/crossgcc/2006-01/msg00091.html
+    * Obey GLIBCTHREADS_FILENAME if set (from martinwguy@yahoo.it)
+
+
+    all.sh:
+    * If build dir exists, remove it in the background not foreground
+
+    getandpatch.sh:
+    * handle gcc-3.3.6, gcc-4.1-2006* snapshots
+    * Recognise glibc-200* snapshots and get them from the snapshots 
+      directory first before falling back to cvs. (from martinwguy@yahoo.it)
+    * Add mirror site for sanitised linux-libc-headers (from martinwguy@yahoo.it)
+
+    gcc-2.95.3:
+    * added patches/gcc-2.95.3/deque-leak-fix.patch to fix leak in deque::erase
+
+    gcc-3.3.x:
+    * carried patches/gcc-3.3.[56]/gcc-3.3.4-arm-bigendian.patch forward
+
+    gcc-3.4.5:
+    * carried patches/gcc-3.4.4/* forward
+
+    gcc-4.0.2:
+    * added patches/gcc-4.0.2/pr21623-workaround.patch
+    * carried fix-fixincl.patch and pr20815-fix.patch forward
+
+    gcc-4.1:
+    * added 4.1.0-20060219
+
+    glibc-2.3.5:
+    * added patches/glibc-2.3.5/glibc-2.3.5-sh-memset.patch
+
+    glibc-2.3.6:
+    * use patches updated by RPJ Day 
+      but left out two powerpc ones for moment, attrib probs?
+
+0.39 (not officially released):
+    glibc:
+    * added patches/glibc-2.2.2/glibc-2.2.2-syslog-bugfix.patch to fix a problem with syslog
+
+    crosstool.sh:
+    * handle pentium3 target (that's what comes after i386...i686)
+    * libc.so fixup now unconditional; see http://sources.redhat.com/ml/crossgcc/2005-08/msg00149.html
+
+    arm:
+    * added gcc-3.3.[456]/gcc-3.3.4-arm-pr22528.patch (thanks to Lennert
+      and Richard Earnshaw)
+
 0.38:
     crosstool.sh:
     * crosstool.sh now removes symlink before creating it

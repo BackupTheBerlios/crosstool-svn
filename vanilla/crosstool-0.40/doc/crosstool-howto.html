@@ -59,9 +59,9 @@ system or CPU type, to speed up your Linux compiles.
 <h2><a name="quick">Quick Start</a></h2>
 Download and unpack.  For instance:
 <pre>
-wget http://kegel.com/crosstool/crosstool-0.38.tar.gz
-tar -xzvf crosstool-0.38.tar.gz
-cd crosstool-0.38
+wget http://kegel.com/crosstool/crosstool-0.40.tar.gz
+tar -xzvf crosstool-0.40.tar.gz
+cd crosstool-0.40
 </pre>
 Then look at the demo scripts; there's one for each supported CPU type.
 For instance, demo-i686.sh is an example of how to build a toolchain that targets
@@ -216,7 +216,8 @@ The last two runs are identical except that on the last run, you have to set a f
 <ul>
 <li>GCC_HOST should be the GNU configuration name (e.g. powerpc-750-linux-gnu) of the <i>host</i> machine
 <li>PATH must be set to include the bin directory of the host and target compilers that can run on the build machine
-<li>CC and AR have to be set to a compiler that generates code that runs on the host, and a version of ar that
+<li>CC, AR, and RANLIB have to be set to a compiler that generates code that runs on the host, 
+and versions of ar and ranlib that
 can handle archives of code for the host.
 </ul>
 demo-canadian.sh (when I finish it) will demonstrate how to get this working.
@@ -322,7 +323,7 @@ You'll need to install GNU Diffutils or GNU Patch, since BSD's patch utility
 doesn't accept the --fuzz parameter.
 
 <h3><a name=mac>Mac OS X</a></h3>
-You need to install gawk, gnu sed, and wget before you can build crosstool on Mac OS X.  
+You need to install gawk, gnu sed, gnu install, and wget, such that they are used instead of the native versions, before you can build crosstool on Mac OS X.  
 The way I installed them was using <a href="http://fink.sourceforge.net/">fink</a>,
 but <a href="http://darwinports.opendarwin.org/">DarwinPorts</a> would probably do as well.
 <p>
@@ -364,7 +365,21 @@ directory names with spaces in them when running crosstool.
 It might work, but if it doesn't, you've been warned.
 (Same goes for Mac OS X.)
 <p>
-This isn't really a crosstool problem, but configuring linux-2.6 on cygwin may fail with the error
+crosstool creates some really deeply nested directories while building,
+so filenames are quite long.  This has two consequences:
+<p>
+First, on some versions of Windows, filenames (including directory) can't 
+be longer than 240 chars.  To avoid exceeding this limit, don't run crosstool in
+a directory with a long name. 
+<p>
+Second, the maximum length of commandlines is extremely short.
+Since crosstool uses commandlines that include multiple filenames, 
+they can exceed the limit very quickly.
+You can avoid this problem by using the "mount" command's options.
+e.g. mount /bin and /usr/bin with -X or "-o cygexec" (see <a href="http://www.cygwin.com/faq/faq-nochunks.html#faq.programming.make-execvp">the cygwin faq</a>,
+and/or mount the crosstool directory with "-o managed" (see <a href="http://www.cygwin.com/cygwin-ug-net/using-utils.html#mount">the cygwin doc for "mount"</a>).
+<p>
+Also, this isn't really a crosstool problem, but configuring linux-2.6 on cygwin may fail with the error
 <pre>
 $ make menuconfig
  HOSTCC  scripts/basic/fixdep
@@ -511,7 +526,7 @@ Related Mailing lists (corrections welcome):
 <li>Alpha: <a href="https://www.redhat.com/mailman/listinfo/axp-list">axp-list</a>
 <li>ARM: <a href="http://lists.arm.linux.org.uk/mailman/listinfo/linux-arm-toolchain">linux-arm-toolchain</a>
 <li>HPPA: <a href="http://www.parisc-linux.org/mailing-lists/">parisc-linux</a>
-<li>MIPS: <a href="http://www.linux-mips.org/mail.html">linux-mips</a>
+<li>MIPS: <a href="http://www.linux-mips.org/wiki/Net_Resources#Mailing_lists">linux-mips</a>
 <li>PowerPC: <a href="http://lists.linuxppc.org/linuxppc-embedded/">linuxppc-embedded</a>, 
 <a href="http://ozlabs.org/pipermail/linuxppc-dev/">linuxppc-dev</a>
 <li>PowerPC64: <a href="http://ozlabs.org/pipermail/linuxppc64-dev/">linuxppc64-dev</a>

@@ -84,13 +84,16 @@ fi
 # One is forbidden
 test -z "${LD_LIBRARY_PATH}" || abort  "glibc refuses to build if LD_LIBRARY_PATH is set.  Please unset it before running this script."
 
-# And one is derived.
+# And one is derived if unset.
+test -z "${GLIBCTHREADS_FILENAME}" &&
 GLIBCTHREADS_FILENAME=`echo $GLIBC_DIR | sed 's/glibc-/glibc-linuxthreads-/'`
 
 # Check for a few prerequisites that have tripped people up.
 awk '/x/' < /dev/null  || abort "You need awk to build a toolchain."
 test -z "${CFLAGS}"    || abort "Don't set CFLAGS, it screws up the build"
 test -z "${CXXFLAGS}"  || abort "Don't set CXXFLAGS, it screws up the build"
+bison --version > /dev/null || abort "You don't have bison installed"
+flex --version > /dev/null || abort "You don't have flex installed"
 
 #---------------------------------------------------------
 
@@ -203,7 +206,7 @@ case $TARGET in
     arm*)     ARCH=arm ;;
     cris*)    ARCH=cris ;;
     hppa*)    ARCH=parisc ;;
-    i*86*)    ARCH=i386 ;;
+    i*86*|pentium*)    ARCH=i386 ;;
     i4004)    abort "ENOMEM" ;;
     ia64*)    ARCH=ia64 ;;
     mips*)    ARCH=mips ;;
@@ -436,11 +439,14 @@ if grep -q 'gcc-[34]' ${GCC_CORE_DIR}/ChangeLog && test '!' -f $HEADERDIR/featur
     # having a copy of stdio_lim.h... see
     # http://sources.redhat.com/ml/libc-alpha/2003-11/msg00045.html
     cp bits/stdio_lim.h $HEADERDIR/bits/stdio_lim.h
+
     # Following error building gcc-4.0.0's gcj:
     #  error: bits/syscall.h: No such file or directory
     # solved by following copy; see
     # http://sourceware.org/ml/crossgcc/2005-05/msg00168.html
-    cp misc/syscall-list.h $HEADERDIR/bits/syscall.h
+    # but it breaks arm, see http://sourceware.org/ml/crossgcc/2006-01/msg00091.html
+    # so uncomment this if you need it
+    #cp misc/syscall-list.h $HEADERDIR/bits/syscall.h
 
     cd ..
 fi
@@ -549,22 +555,17 @@ make install_root=${SYSROOT} $GLIBC_SYSROOT_ARG $GLIBC_INITIAL_INSTALL_RULE
 # FIXME: test -h is not portable
 # FIXME: probably need to check more files than just these three...
 # Need to use sed instead of just assuming we know what's in libc.so because otherwise alpha breaks
-# But won't need to do this at all once we use --with-sysroot (available in gcc-3.3.3 and up)
 #
 # 2. Remove lines containing BUG per http://sources.redhat.com/ml/bug-glibc/2003-05/msg00055.html,
 # needed to fix gcc-3.2.3/glibc-2.3.2 targeting arm
 #
 # To make "strip *.so.*" not fail (ptxdist does this), rename to .so_orig rather than .so.orig
 for file in libc.so libpthread.so libgcc_s.so; do
-  for lib in lib lib64 usr/lib usr/lib64; do
-        if test -f ${SYSROOT}/$lib/$file && test ! -h ${SYSROOT}/$lib/$file; then
-                mv ${SYSROOT}/$lib/$file ${SYSROOT}/$lib/${file}_orig
-                if test -z "$USE_SYSROOT"; then
-                  sed 's,/usr/lib/,,g;s,/usr/lib64/,,g;s,/lib/,,g;s,/lib64/,,g;/BUG in libc.scripts.output-format.sed/d' < ${SYSROOT}/$lib/${file}_orig > ${SYSROOT}/$lib/$file
-                else
-                  sed '/BUG in libc.scripts.output-format.sed/d' < ${SYSROOT}/$lib/${file}_orig > ${SYSROOT}/$lib/$file
-                fi
-        fi
+    for lib in lib lib64 usr/lib usr/lib64; do
+      if test -f ${SYSROOT}/$lib/$file && test ! -h ${SYSROOT}/$lib/$file; then
+        mv ${SYSROOT}/$lib/$file ${SYSROOT}/$lib/${file}_orig
+        sed 's,/usr/lib/,,g;s,/usr/lib64/,,g;s,/lib/,,g;s,/lib64/,,g;/BUG in libc.scripts.output-format.sed/d' < ${SYSROOT}/$lib/${file}_orig > ${SYSROOT}/$lib/$file
+      fi
     done
 done
 cd ..

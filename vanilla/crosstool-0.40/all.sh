@@ -114,7 +114,12 @@ if test "$opt_no_unpack" = ""; then
       export PTXDIST_DIR
    fi
    # Download and patch
-   rm -rf $BUILD_DIR; mkdir -p $BUILD_DIR
+   if test -d "$BUILD_DIR"; then
+	# Remove in background
+   	mv $BUILD_DIR $BUILD_DIR.$$
+   	rm -rf $BUILD_DIR.$$ &
+   fi
+   mkdir -p $BUILD_DIR
    sh getandpatch.sh
 fi
 
